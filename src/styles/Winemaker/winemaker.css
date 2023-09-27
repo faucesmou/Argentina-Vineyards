@@ -1,0 +1,69 @@
+.Winemaker {
+    
+}
+.Winemaker .datos {
+    padding: 20px 50px;
+}
+.Winemaker .datos .titular-principal{
+    color: #787878;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 40px;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid var(--colorIcons);
+    border-bottom: 1px solid var(--colorIcons);
+    margin: 20px 0;
+}
+.Winemaker .datos article h3{
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.Winemaker .datos article p.drop-cap{
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 1px;/* Espaciado de línea */
+    margin-bottom: 20px; /* Espacio entre párrafos */
+    /* Estilos de la letra inicial */
+    overflow: hidden;
+}
+.Winemaker .datos article p span.letraGrande{
+    float: left;
+    font-size: 72px; /* Tamaño de fuente de la letra inicial */
+    margin-right: 8px; /* Espacio entre la letra inicial y el texto */
+    line-height: 1; 
+}
+.Winemaker .datos article span.light{
+    color: #626262;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 1px;
+}
+.Winemaker .datos article img{
+    margin: 20px 0;
+}
+.Winemaker h2.foot{
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.Winemaker button{
+    padding: 18px 33px;
+    width: 100%;
+    text-align: center;
+    background-color: #b89351;
+    color: #ffffff;
+    border: none;
+    font-size: 120%;
+    line-height: 120%;
+}

@@ -1,0 +1,64 @@
+import React from 'react'
+
+function Footer() {
+  return (
+    <footer>
+        <section className='logo contenedor'>
+            <img src="/Images/footer/logo-blanco-fondo-negro-150x100-04.png" alt="Finca Propia logo" />
+        </section>
+        <section className='contacto contenedor'>
+            <ul>
+                <li>
+                    <h2>Finca Propia</h2>
+                    <a href="tel:5492613300621">Cel: +54 9 2613 30-0621</a>
+                    <p>Email:</p>
+                    <a href="mailto:propietariosfinca@fincapropia.com">propietariosfinca@fincapropia.com</a>
+                </li>
+                <li>
+                    <h2>Viña La Arboleda</h2>
+                    <a href='https://maps.app.goo.gl/GooCpQH2o94gGFq87'>Ruta 88 Intersección calle Campañaro.</a>
+                    <p>Tupungato, Valle de Uco, Argentina</p>
+                    <a href="mailto:propietariosfinca@fincapropia.com">contacto@fincapropia.com</a>
+                </li>
+            </ul>
+        </section>
+        <section className='direccion contenedor'>
+            <ul>
+                <li>
+                    <h2>Finca Propia Paraguay</h2>
+                    <p>DANIEL CORONEL</p>
+                    <p>TERARE PARAGUAY</p>
+                    <p>Asunción: WTC torre 2 piso 10</p>
+                    <p>Ciudad del Este: Avenida 11 de Setiembre 512, piso 1 casi Carlos A. López</p>
+                    <a href="tel:595992925106">Tel.: +595 992 925 106</a>
+                    <a href="mailto:atencion.paraguay@fincapropia.com">atencion.paraguay@fincapropia.com</a>
+                </li>
+            </ul>
+        </section>
+        <section className='brasil contenedor'>
+            <ul>
+                <li>
+                    <h2>Finca Propia Brasil</h2>
+                    <a href="tel:551123385510">Tel: +55 11 2338-5510</a>
+                    <a href="mailto:contacto.br@fincapropia.com">contacto.br@fincapropia.com</a>
+                    <a href="mailto:propietarios.br@fincapropia.com">propietarios.br@fincapropia.com</a>
+                </li>
+                <li>
+                    <h2>Los vinos de</h2>
+                    <img src="/Images/home/antoniomaslogo.png" alt="Antonio Mas Wines" />
+                </li>
+            </ul>
+        </section>
+        <section className='legales'>
+            <article className='derechos'>
+                <p>© 2020 Finca Propia. All Rights Reserved.</p>
+            </article>
+            <article>
+                <p>Legales</p>
+            </article>
+        </section>
+    </footer>
+  )
+}
+
+export default Footer

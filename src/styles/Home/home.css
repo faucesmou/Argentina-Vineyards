@@ -1,0 +1,49 @@
+.Home img{
+    border-radius: 10px;
+}
+.Home .parallax-container{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.Home .parallax-container video{
+    margin-top: 60px;
+}
+.Home .cards{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.Home .cards article{
+    margin: 20px 0;
+    text-align: center;
+}
+.Home .cards article p{
+    letter-spacing: 1px;
+    color: #161922;
+    margin: 10px 0;
+}
+.Home .cards article p span{
+    font-style: italic;
+    font-weight: bold;
+}
+.Home .cards article small{
+    letter-spacing: 1px;
+    color: #626262;
+}
+
+/* Media query Tablets */
+@media (min-width: 768px) {
+    .Home .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .Home .cards article .descripcion{
+        height: 100px;
+    }
+    .Home .cards article{
+        width: 22%;
+    }
+}

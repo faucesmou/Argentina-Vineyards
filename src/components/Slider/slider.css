@@ -1,0 +1,21 @@
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: calc(100vw - 100px); /* Cambia el ancho al 100% */
+  height: auto; /* Autoajuste de altura según el contenido */
+}
+
+.slide {
+  width: 100%; /* Cambia el ancho al 100% */
+  height: auto; /* Autoajuste de altura según el contenido */
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}

@@ -1,0 +1,94 @@
+.Dueño {
+    padding: 20px 0;
+}
+.Dueño .vides,
+.Dueño .sueño {
+    max-width: 708px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.Dueño .sueño h2{
+    color: #787878;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 36px;
+}
+.Dueño .sueño p{
+    margin: 0 0 15px;
+    font-family: "Roboto",Arial,Tahoma,sans-serif;
+}
+.Dueño .sueño p.drop-cap{
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 1px;/* Espaciado de línea */
+    margin-bottom: 20px; /* Espacio entre párrafos */
+    /* Estilos de la letra inicial */
+    overflow: hidden;
+}
+.Dueño .sueño p span.letraGrande{
+    float: left;
+    font-size: 72px; /* Tamaño de fuente de la letra inicial */
+    margin-right: 8px; /* Espacio entre la letra inicial y el texto */
+    line-height: 1; 
+}
+.Dueño .sueño p span.dorado{
+    color: #c69f56;
+}
+.Dueño .sueño p.menor{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+.Dueño .logoNegro{
+    display: flex;
+    background-color: #000;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 40px;
+    
+}
+.Dueño .logoNegro .imagen-logo img{
+    height:60px;
+}
+.Dueño .comparativo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Dueño button{
+    padding: 18px 33px;
+    width: 350px;
+    text-align: center;
+    background-color: #b89351;
+    color: #ffffff;
+    border: none;
+    font-size: 120%;
+    line-height: 120%;
+}
+.Dueño .vides{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px 0;
+}
+.Dueño .vides .produccion{
+    margin: 20px 40px;
+}
+.Dueño .vides .produccion h4{
+    margin: 10px 0 20px;
+}
+.Dueño .vides .produccion p{
+    color: #626262;
+    letter-spacing: 1px;
+}
+.Dueño .vides .produccion p span{
+    font-weight: 700;
+}

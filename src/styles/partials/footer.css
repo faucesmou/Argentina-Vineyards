@@ -1,0 +1,80 @@
+footer{
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto",Arial,Tahoma,sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 1px;
+}
+footer a{
+    color: white;
+    display: inline-block;
+}
+footer .contenedor{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+footer .logo img{
+    width: 150px;
+    margin: 20px auto;
+}
+footer .contenedor ul{
+    width: 100%;
+    margin-top: 10px;
+}
+footer .contenedor ul li {
+    margin-top: 10px;
+}
+footer h2{
+    margin-bottom: 10px;
+}
+footer .brasil img{
+    margin-top: 10px;
+    width: 50%;
+}
+footer .legales{
+    width: 100%;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+footer .legales article.derechos{
+    color: #4d4d4d;
+}
+
+/* Media query Tablets */
+@media (min-width: 768px) {
+    footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: start;
+    }
+    footer .contenedor{
+        width: 20%;
+    }
+    footer .brasil img{
+        width: 100%;
+    }
+    footer .contenedor ul li {
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    footer .contenedor a{
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

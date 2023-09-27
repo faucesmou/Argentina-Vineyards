@@ -1,0 +1,20 @@
+.LosVinos{
+    
+}
+.LosVinos{
+
+}
+
+.LosVinos .vinos .signature p.drop-cap{
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 1px;/* Espaciado de línea */
+    margin-bottom: 20px; /* Espacio entre párrafos */
+    overflow: hidden;
+}
+.LosVinos .vinos .signature p span.letraGrande{
+    float: left;
+    font-size: 72px; /* Tamaño de fuente de la letra inicial */
+    margin-right: 8px; /* Espacio entre la letra inicial y el texto */
+    line-height: 1; 
+}

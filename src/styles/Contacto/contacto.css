@@ -1,0 +1,38 @@
+
+.Contacto form{
+    padding: 20px;
+    /* background-color: #ffffff; */
+    margin-top: -20px;
+}
+
+
+@media (min-width: 768px) {
+    .Finca .content .legado{
+        max-width: 1440px;
+        padding: 0 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .Finca .content .legado article{
+        width: 40%;
+    }
+    .Finca .content .legado h2{
+        font-size: 36px;
+        line-height: 43px;
+        letter-spacing: 1px;
+        font-weight: 300;
+        font-family: "Playfair Display",Arial,Tahoma,sans-serif;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #cdcecf;
+    }
+    .Finca .content .legado p.drop-cap{
+        font-size: 15px;
+        line-height: 26px;
+        letter-spacing: 1px;/* Espaciado de línea */
+        margin-bottom: 20px; /* Espacio entre párrafos */
+        /* Estilos de la letra inicial */
+        overflow: hidden;
+    }
+}

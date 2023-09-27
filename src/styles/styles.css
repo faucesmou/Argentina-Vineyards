@@ -1,0 +1,23 @@
+@import url('./variables.css');
+@import url('./partials/general.css');
+@import url('./partials/header.css');
+@import url('./partials/footer.css');
+
+/* Home */
+@import url('./Home/home.css');
+
+/* Dueño */
+@import url('./Dueño/Dueño.css');
+
+/* Winemaker */
+@import url('./Winemaker/winemaker.css');
+
+/* contacto */
+@import url('./Contacto/contacto.css');
+
+/* finca */
+@import url('./Finca/finca.css');
+@import url('./Finca/galery.css');
+
+/* vinos */
+@import url('./LosVinos/vinos.css');
