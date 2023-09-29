@@ -291,14 +291,14 @@ function Contacto() {
           <section className='contenedorOficinas'>
             <section className="conocer-mas">
               <article>
-              <h5>Conoce más sobre cómo ser dueño o comunícate con un asesor..</h5>
+              <h5>Conoce más sobre cómo ser dueño o comunícate con un asesor!</h5>
               <div>
                 <img className="imgContacto"
                   src="/Images/finca/fondo-home-01.jpg"
                   alt="Finca"
-                  style={{
+                /*   style={{
                     backgroundImage: `url(${"/Images/contacto/finca.jpg"})`,
-                  }}
+                  }} */
                 />
               </div>             
            {/*    <iframe
