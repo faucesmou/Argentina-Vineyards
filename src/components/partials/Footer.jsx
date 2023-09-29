@@ -9,13 +9,13 @@ function Footer() {
         <section className='contacto contenedor'>
             <ul>
                 <li>
-                    <h2>Finca Propia</h2>
+                    <h5>Finca Propia</h5>
                     <a href="tel:5492613300621">Cel: +54 9 2613 30-0621</a>
                     <p>Email:</p>
                     <a href="mailto:propietariosfinca@fincapropia.com">propietariosfinca@fincapropia.com</a>
                 </li>
                 <li>
-                    <h2>Viña La Arboleda</h2>
+                    <h5>Viña La Arboleda</h5>
                     <a href='https://maps.app.goo.gl/GooCpQH2o94gGFq87'>Ruta 88 Intersección calle Campañaro.</a>
                     <p>Tupungato, Valle de Uco, Argentina</p>
                     <a href="mailto:propietariosfinca@fincapropia.com">contacto@fincapropia.com</a>
@@ -25,7 +25,7 @@ function Footer() {
         <section className='direccion contenedor'>
             <ul>
                 <li>
-                    <h2>Finca Propia Paraguay</h2>
+                    <h5>Finca Propia Paraguay</h5>
                     <p>DANIEL CORONEL</p>
                     <p>TERARE PARAGUAY</p>
                     <p>Asunción: WTC torre 2 piso 10</p>
@@ -37,14 +37,14 @@ function Footer() {
         </section>
         <section className='brasil contenedor'>
             <ul>
-                <li>
-                    <h2>Finca Propia Brasil</h2>
+                <li h5>
+                    <h5>Finca Propia Brasil</h5>
                     <a href="tel:551123385510">Tel: +55 11 2338-5510</a>
                     <a href="mailto:contacto.br@fincapropia.com">contacto.br@fincapropia.com</a>
                     <a href="mailto:propietarios.br@fincapropia.com">propietarios.br@fincapropia.com</a>
                 </li>
                 <li>
-                    <h2>Los vinos de</h2>
+                    <h5>Los vinos de</h5>
                     <img src="/Images/home/antoniomaslogo.png" alt="Antonio Mas Wines" />
                 </li>
             </ul>

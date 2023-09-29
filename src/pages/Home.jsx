@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Footer from '../components/partials/Footer'
+import videoHome from '../assets/home/Finca-propia-sin-sonido-arreglo-1.mp4'
 
 function Home({setIsMenuOpen}) {
 
@@ -62,7 +63,7 @@ function Home({setIsMenuOpen}) {
 		<div className='Home' id="scroll-animate-main" onClick={toggleMenu}>
 			<div className="wrapper-parallax">
 				<div className='parallax-container'>
-					<video src="/Images/home/Finca-propia-sin-sonido-arreglo-1.mp4" autoPlay={true} loop={true} muted="muted" id='megavideofinca'></video>
+					<video src={videoHome}/* "/Images/home/Finca-propia-sin-sonido-arreglo-1.mp4"  */autoPlay={true} loop={true} muted="muted" id='megavideofinca'></video>
 				</div>
 				<div className='Home content'>
 					<section className='cards container'>
