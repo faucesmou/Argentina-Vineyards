@@ -3,7 +3,7 @@ import Footer from '../components/partials/Footer'
 import videoHome from '../assets/home/Finca-propia-sin-sonido-arreglo-1.mp4'
 
 function Home({setIsMenuOpen}) {
-
+console.log('VIDEO HOME--->', videoHome);
 	useEffect(() => {
 		const scrollFooter = (scrollY, heightFooter) => {
 
