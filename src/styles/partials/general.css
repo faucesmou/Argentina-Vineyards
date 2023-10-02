@@ -8,6 +8,7 @@ html {
 }
 body {
   height: 100vh;
+  font-family: var(--fuente-regular);
 }
 main {
   width: 100%;

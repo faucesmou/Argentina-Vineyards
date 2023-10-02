@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../components/partials/Footer";
 
-/* import axios from "axios"; */
+import axios from "axios";
 
 function Contacto() {
   useEffect(() => {
@@ -65,23 +65,26 @@ function Contacto() {
 
   const validateForm = () => {
     const validationErrors = {};
-    if (formData2.cuil.trim() === "") {
-      validationErrors.cuil = "El Cuil es requerido";
+    if (formData2.nombreApellido.trim() === "") {
+      validationErrors.nombreApellido = "El nombre y Apellido es requerido";
     }
-    if (formData2.obraSocial.trim() === "") {
-      validationErrors.obraSocial = "La Obra Social es requerida";
+    if (formData2.pais.trim() === "") {
+      validationErrors.pais = "El Pais es requerido";
     }
-    if (formData2.tipoDeAporte.trim() === "") {
-      validationErrors.tipoDeAporte = "El tipo de Aporte es requerido";
+    if (formData2.telefono.trim() === "") {
+      validationErrors.telefono = "El Pais es requerido";
     }
-    if (formData2.caso.trim() === "") {
-      validationErrors.caso = "El Caso es requerido";
+    if (formData2.email.trim() === "") {
+      validationErrors.email = "El email es requerido";
     }
-    if (formData2.periodoOrigen.trim() === "") {
-      validationErrors.periodoOrigen = "La periodo de Origen es requerido";
+    if (formData2.preferencia.trim() === "") {
+      validationErrors.preferencia = "La preferencia es requerida";
     }
-    if (formData2.periodoImpacto.trim() === "") {
-      validationErrors.periodoImpacto = "El Periodo de Impacto es requerido";
+    if (formData2.horario.trim() === "") {
+      validationErrors.horario = "El horario es requerido";
+    }
+    if (formData2.producto.trim() === "") {
+      validationErrors.producto = "El Producto es requerido";
     }
 
     return validationErrors;
@@ -109,16 +112,17 @@ function Contacto() {
         setErrors({});
 
         console.log("este es el dataFormulario--->", dataFormulario);
-       /*    const response = await axios.get(
-          "http://localhost:443",
+        const response = await axios.post(
+          "https://35.164.170.212:443/api/submit-contactanos"
+          /* "http://localhost:443/api/submit-emailfooter" */,
           dataFormulario
-        ); */ 
+        ); 
 
-        /*   console.log(
+         console.log(
           "Datos enviados al servidor: dataFormulario--->",
           dataFormulario
-        ); */
-
+        ); 
+        console.log("Respuesta del servidor:", response.data);
         // Redirección al usuario a la página que corresponda:
         /* 
         const respuestaPeticion = response.data.data.url;
@@ -127,7 +131,7 @@ function Contacto() {
 
         setFormSubmitted(true);
       } catch (error) {
-        console.error("Error al enviar el Form:---> ", error);
+        console.error("Error al enviar el Form al backend:---> ", error);
       }
     } else {
       setErrors(validationErrors);
@@ -285,7 +289,7 @@ function Contacto() {
                   <span className="error-message">{errors.producto}</span>
                 )}
               </div>
-              <button type="submit">Enviar</button>
+              <button onClick={handleSubmit} type="submit">Enviar</button>
             </form>
           </section>
           <section className='contenedorOficinas'>
