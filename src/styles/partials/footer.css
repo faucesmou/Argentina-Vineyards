@@ -34,8 +34,15 @@ footer .contenedor ul{
 }
 footer .contenedor ul li {
     margin-top: 10px;
+    font-family: "Roboto",Arial,Tahoma,sans-serif;
 }
 footer h2{
+    margin-bottom: 10px;
+}
+footer h5{
+    font-family: "Roboto",Arial,Tahoma,sans-serif;
+    font-weight: 400;
+    padding: 0px;
     margin-bottom: 10px;
 }
 footer .brasil img{

@@ -39,7 +39,10 @@ function Footer() {
             <ul>
                 <li h5>
                     <h5>Finca Propia Brasil</h5>
-                    <a href="tel:551123385510">Tel: +55 11 2338-5510</a>
+                    <a href="tel:(011) 93022-7013">Tel: (011) 93022-7013</a>
+                    <p>Endereço</p>
+                    <p>Av. Miruna 1569 - São Paulo - Brasil</p>
+                    <p>Cep 04084-006</p>
                     <a href="mailto:contacto.br@fincapropia.com">contacto.br@fincapropia.com</a>
                     <a href="mailto:propietarios.br@fincapropia.com">propietarios.br@fincapropia.com</a>
                 </li>

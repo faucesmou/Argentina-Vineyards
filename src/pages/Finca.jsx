@@ -1,16 +1,17 @@
 import React, { useEffect } from "react";
 import Footer from "../components/partials/Footer";
-import Galeria from "../components/Galery/Galeria";
+/* import Galeria from "../components/Galery/Galeria"; */
+import Galeria2 from "../components/Galery/Galeria2";
 import Navegar from "../components/Navegar/Navegar";
 
 function Finca() {
   const images = [
-    "/Images/Finca/MapaArboleda.png",
+    /* "/Images/Finca/MapaArboleda.png", */
     "/Images/Finca/acceso-propietarios-fondo-01.jpg",
-    "/Images/Finca/FincaPropiaMar20-198-scaled.jpg",
+    /* "/Images/Finca/FincaPropiaMar20-198-scaled.jpg", */
     "/Images/Finca/FincaPropiaMar20-488-scaled.jpg",
     "/Images/Finca/fondo-home-01.jpg",
-    "/Images/Finca/procesosuvas-02.jpg",
+    /* "/Images/Finca/procesosuvas-02.jpg" */
   ];
   useEffect(() => {
     const scrollFooter = (scrollY, heightFooter) => {
@@ -98,8 +99,11 @@ function Finca() {
                 por la magnífica <strong>Cordillera de los Andes</strong>.
               </p>
             </article>
+           
+            {/*   <Galeria images={images} /> */}
+              <Galeria2 images={images} />
+        
             <article>
-              <Galeria images={images} />
               <p className="drop-cap">
                 Porque entendemos que los vinos nacen en el viñedo y que
                 nuestros vinos deben estar a la altura de nuestro sueño, la

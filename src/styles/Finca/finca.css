@@ -1,6 +1,4 @@
-.Finca{
-    
-}
+
 .Finca .content {
     padding-top: 20px
 }
@@ -11,8 +9,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.Finca .content .legado article{
+.Finca .content .legado .article{
     width: 100%;
+    text-align: center;
 }
 .Finca .content .legado h2{
     font-size: 25px;
@@ -24,8 +23,13 @@
     margin-bottom: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid #cdcecf;
+    color: black;
 }
-
+/* .Finca .content .legado .drop-cap .letraGrande {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 .Finca .content .legado p.drop-cap{
     font-size: 13px;
     line-height: 19px;
@@ -40,6 +44,7 @@
     font-size: 72px; /* Tamaño de fuente de la letra inicial */
     margin-right: 8px; /* Espacio entre la letra inicial y el texto */
     line-height: 1; 
+    text-align: center;
 }
 .Finca .content .legado p.arboleda{
     font-size: 13px;
@@ -47,6 +52,7 @@
     letter-spacing: 0px;
     font-weight: 400;
     color: #626262;
+    text-align: center;
 }
 .Finca .content .video-completo {
     width: 100%;
@@ -58,7 +64,7 @@
 .Finca .content .conocer-mas {
     width: 100%;
     padding: 20px 20px 0;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 .Finca .content .conocer-mas h2{
     font-size: 32px;
@@ -96,6 +102,9 @@
     font-size: 120%;
     line-height: 120%;
 }
+.conocer-mas h2{
+    color:#000000;
+}
 
 @media (min-width: 768px) {
     .Finca .content .legado{
@@ -106,8 +115,11 @@
         justify-content: space-between;
     }
     .Finca .content .legado article{
-        width: 40%;
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
+  
     .Finca .content .legado h2{
         font-size: 36px;
         line-height: 43px;
@@ -125,5 +137,7 @@
         margin-bottom: 20px; /* Espacio entre párrafos */
         /* Estilos de la letra inicial */
         overflow: hidden;
+        width: auto;
+        
     }
 }
