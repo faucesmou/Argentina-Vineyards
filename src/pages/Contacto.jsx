@@ -330,8 +330,8 @@ function Contacto() {
               <section className="comparativo">
                 <div>
                   <img
-                    src="/Images/finca/fondo-home-01.jpg"
-                    alt="finca"
+                    src="/Images/Finca/fondo-home-01.jpg"
+                    alt="fincaMuestra"
                   />
                 </div>
               </section>
