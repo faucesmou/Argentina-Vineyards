@@ -68,7 +68,7 @@ console.log('VIDEO HOME--->', videoHome);
 
             <video autoPlay loop muted playsInline>
               <source
-                src="/Images/home/Finca-propia-sin-sonido-arreglo-1.mp4"
+                src="/video/Finca-propia-sin-sonido-arreglo-1.mp4"
                 type="video/mp4"
               />
             </video>

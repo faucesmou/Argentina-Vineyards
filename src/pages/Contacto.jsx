@@ -300,16 +300,6 @@ function Contacto() {
                 <h5>
                   Conoce más sobre cómo ser dueño o comunícate con un asesor!
                 </h5>
-                <div>
-                  <img
-                    className="imgContacto"
-                    src="/Images/finca/fondo-home-01.jpg"
-                    alt="Finca"
-                    /*   style={{
-                    backgroundImage: `url(${"/Images/contacto/finca.jpg"})`,
-                  }} */
-                  />
-                </div>
                 {/*    <iframe
                 loading="lazy"
                 title="Finca Propia, Ruta Provincial 88, Tupungato, Provincia de Mendoza, Argentina"
@@ -319,14 +309,7 @@ function Contacto() {
                 src="/Images/finca/MapaArboleda.png"
               ></iframe> */}
               </article>
-              <section className="comparativo">
-                <div>
-                  <img
-                    src="/Images/dueno/PRECIOS-WEB-actualizado-2023-1024x699.png"
-                    alt="especificaciones"
-                  />
-                </div>
-              </section>
+             
               <section className="comparativo">
                 <div>
                   <img

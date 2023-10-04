@@ -121,7 +121,7 @@ function Finca() {
           <section className="video-completo">
             <video autoPlay loop muted playsInline>
               <source
-                src="/Images/Finca/WhatsApp-Video-2020-07-02-at-18.50.00.mp4"
+                src="/video/WhatsApp-Video-2020-07-02-at-18.50.00.mp4"
                 type="video/mp4"
               />
             </video>
