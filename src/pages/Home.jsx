@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import Footer from '../components/partials/Footer'
-import videoHome from '../assets/home/Finca-propia-sin-sonido-arreglo-1.mp4'
+/* import videoHome from '../assets/home/Finca-propia-sin-sonido-arreglo-1.mp4' */
 
 function Home({setIsMenuOpen}) {
-console.log('VIDEO HOME--->', videoHome);
+/* console.log('VIDEO HOME--->', videoHome); */
 	useEffect(() => {
 		const scrollFooter = (scrollY, heightFooter) => {
 
@@ -63,7 +63,7 @@ console.log('VIDEO HOME--->', videoHome);
 		<div className='Home' id="scroll-animate-main" onClick={toggleMenu}>
 			<div className="wrapper-parallax">
 				<div className='parallax-container'>
-					{/* <video src={videoHome} "/Images/home/Finca-propia-sin-sonido-arreglo-1.mp4"  autoPlay={true} loop={true} muted="muted" id='megavideofinca'></video> */}
+					
 
             <video autoPlay loop muted playsInline>
               <source
