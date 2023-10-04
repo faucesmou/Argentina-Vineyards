@@ -12,7 +12,7 @@ function Galeria2({ images }) {
                 setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
                 setOpacity(1);
             }, 700); // Tiempo para que se complete el efecto de desvanecimiento
-        }, 5000); // Intervalo de cambio de imagen (3 segundos en este ejemplo)
+        }, 3000); // Intervalo de cambio de imagen (3 segundos en este ejemplo)
 
         return () => {
             clearInterval(timer); // Limpia el intervalo cuando el componente se desmonta
