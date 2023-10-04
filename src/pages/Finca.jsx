@@ -119,19 +119,19 @@ function Finca() {
             </article>
           </section>
           <section className="video-completo">
-           {/*  <video autoPlay loop muted playsInline>
+            <video autoPlay loop muted playsInline>
               <source
                 src="/Images/Finca/WhatsApp-Video-2020-07-02-at-18.50.00.mp4"
                 type="video/mp4"
               />
-            </video> */}
+            </video>
 
-            <video
+         {/*    <video
               src="/Images/Finca/WhatsApp-Video-2020-07-02-at-18.50.00.mp4"
               autoPlay={true}
               loop={true}
               muted="muted"
-            ></video>
+            ></video> */}
           </section>
           <section className="conocer-mas">
             <h2>

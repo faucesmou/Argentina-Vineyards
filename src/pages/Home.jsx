@@ -64,14 +64,14 @@ console.log('VIDEO HOME--->', videoHome);
 			<div className="wrapper-parallax">
 				<div className='parallax-container'>
 					
-				<video src="/Images/home/Finca-propia-sin-sonido-arreglo-1.mp4"  autoPlay={true} loop={true} muted="muted" id='megavideofinca'></video>
+				{/* <video src="/Images/home/Finca-propia-sin-sonido-arreglo-1.mp4"  autoPlay={true} loop={true} muted="muted" id='megavideofinca'></video> */}
 
-            {/* <video autoPlay loop muted playsInline>
+            <video autoPlay loop muted playsInline>
               <source
                 src="/Images/home/Finca-propia-sin-sonido-arreglo-1.mp4"
                 type="video/mp4"
               />
-            </video> */}
+            </video>
 				</div>
 				
 				<div className='Home content'>
