@@ -90,7 +90,7 @@ function Contacto() {
     return validationErrors;
   };
 
- /*  const [selectedMonth, setSelectedMonth] = useState(""); */
+  /*  const [selectedMonth, setSelectedMonth] = useState(""); */
 
   const handleSubmit = async () => {
     const validationErrors = validateForm();
@@ -116,12 +116,12 @@ function Contacto() {
           /* "https://35.164.170.212:443/api/submit-contactanos" */
           "http://localhost:443/api/submit-formulario",
           dataFormulario
-        ); 
+        );
 
-         console.log(
+        console.log(
           "Datos enviados al servidor: dataFormulario--->",
           dataFormulario
-        ); 
+        );
         console.log("Respuesta del servidor:", response.data);
         // Redirección al usuario a la página que corresponda:
         /* 
@@ -289,23 +289,28 @@ function Contacto() {
                   <span className="error-message">{errors.producto}</span>
                 )}
               </div>
-              <button onClick={handleSubmit} type="submit">Enviar</button>
+              <button onClick={handleSubmit} type="submit">
+                Enviar
+              </button>
             </form>
           </section>
-          <section className='contenedorOficinas'>
+          <section className="contenedorOficinas">
             <section className="conocer-mas">
               <article>
-              <h5>Conoce más sobre cómo ser dueño o comunícate con un asesor!</h5>
-              <div>
-                <img className="imgContacto"
-                  src="/Images/finca/fondo-home-01.jpg"
-                  alt="Finca"
-                /*   style={{
+                <h5>
+                  Conoce más sobre cómo ser dueño o comunícate con un asesor!
+                </h5>
+                <div>
+                  <img
+                    className="imgContacto"
+                    src="/Images/finca/fondo-home-01.jpg"
+                    alt="Finca"
+                    /*   style={{
                     backgroundImage: `url(${"/Images/contacto/finca.jpg"})`,
                   }} */
-                />
-              </div>             
-           {/*    <iframe
+                  />
+                </div>
+                {/*    <iframe
                 loading="lazy"
                 title="Finca Propia, Ruta Provincial 88, Tupungato, Provincia de Mendoza, Argentina"
                 aria-label="Finca Propia, Ruta Provincial 88, Tupungato, Provincia de Mendoza, Argentina"
@@ -313,12 +318,27 @@ function Contacto() {
                 className=" lazyloaded"
                 src="/Images/finca/MapaArboleda.png"
               ></iframe> */}
-            </article>
-
-          </section >
+              </article>
+              <section className="comparativo">
+                <div>
+                  <img
+                    src="/Images/dueno/PRECIOS-WEB-actualizado-2023-1024x699.png"
+                    alt="especificaciones"
+                  />
+                </div>
+              </section>
+              <section className="comparativo">
+                <div>
+                  <img
+                    src="/Images/finca/fondo-home-01.jpg"
+                    alt="finca"
+                  />
+                </div>
+              </section>
+            </section>
           </section>
         </div>
-        
+
         <Footer />
       </div>
     </div>

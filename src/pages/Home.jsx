@@ -63,8 +63,16 @@ console.log('VIDEO HOME--->', videoHome);
 		<div className='Home' id="scroll-animate-main" onClick={toggleMenu}>
 			<div className="wrapper-parallax">
 				<div className='parallax-container'>
-					<video src={videoHome}/* "/Images/home/Finca-propia-sin-sonido-arreglo-1.mp4"  */autoPlay={true} loop={true} muted="muted" id='megavideofinca'></video>
+					{/* <video src={videoHome} "/Images/home/Finca-propia-sin-sonido-arreglo-1.mp4"  autoPlay={true} loop={true} muted="muted" id='megavideofinca'></video> */}
+
+            <video autoPlay loop muted playsInline>
+              <source
+                src="/Images/home/Finca-propia-sin-sonido-arreglo-1.mp4"
+                type="video/mp4"
+              />
+            </video>
 				</div>
+				
 				<div className='Home content'>
 					<section className='cards container'>
 						<article className='experiencia'>

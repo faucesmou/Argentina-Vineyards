@@ -99,10 +99,11 @@ function Finca() {
                 por la magnífica <strong>Cordillera de los Andes</strong>.
               </p>
             </article>
-           
+
             {/*   <Galeria images={images} /> */}
-              <Galeria2 images={images} />
-        
+
+            <Galeria2 images={images} />
+
             <article>
               <p className="drop-cap">
                 Porque entendemos que los vinos nacen en el viñedo y que
@@ -118,23 +119,30 @@ function Finca() {
             </article>
           </section>
           <section className="video-completo">
-            <video
+            <video autoPlay loop muted playsInline>
+              <source
+                src="/Images/Finca/WhatsApp-Video-2020-07-02-at-18.50.00.mp4"
+                type="video/mp4"
+              />
+            </video>
+
+            {/* <video
               src="/Images/Finca/WhatsApp-Video-2020-07-02-at-18.50.00.mp4"
               autoPlay={true}
               loop={true}
               muted="muted"
-            ></video>
+            ></video> */}
           </section>
           <section className="conocer-mas">
-                 <h2>
+            <h2>
               Conoce más sobre cómo ser dueño o comunícate con un asesor
               comercial.
-                    </h2>
-                <div className="botones">
-                 <Navegar to="/ser-dueno">
+            </h2>
+            <div className="botones">
+              <Navegar to="/ser-dueno">
                 <button className="black">Ser Dueño</button>
-                </Navegar>
-                <Navegar to="/contacto">
+              </Navegar>
+              <Navegar to="/contacto">
                 <button className="gold">Contactar un asesor comercial</button>
               </Navegar>
             </div>
