@@ -168,3 +168,55 @@ header .redes ul li a .icono-dorado {
         justify-content: center;
     }
 }
+
+/* Media query para tamaños de celulares pequeños */
+@media (max-width: 535px) {
+    header .burger-menu {
+        /* Estilos para el ícono de menú en tamaños pequeños */
+        width: 60px;
+        padding: 15px;
+    }
+
+    header .menu {
+        /* Estilos para el menú desplegado en tamaños pequeños */
+        height: auto; /* Ajusta la altura según el contenido */
+        width: 100%; /* Ancho completo */
+        display: block; /* Cambia a un formato de bloque */
+    }
+
+    header .menu ul {
+        /* Estilos para la lista de elementos del menú */
+        width: 100%;
+        display: block; /* Cambia a un formato de bloque */
+        text-align: center; /* Centra el texto */
+    }
+
+    header .menu ul li {
+        /* Estilos para cada elemento de la lista del menú */
+        width: 100%;
+        text-align: center; /* Centra el texto */
+        margin-bottom: 10px; /* Espacio entre elementos */
+    }
+
+    header .redes {
+        /* Estilos para la sección de redes sociales en tamaños pequeños */
+        height: auto; /* Ajusta la altura según el contenido */
+        width: 100%; /* Ancho completo */
+        display: flex; /* Cambia a un formato de bloque */
+        justify-content: center; /* Centra horizontalmente los elementos */
+
+    header .redes ul {
+        /* Estilos para la lista de redes sociales */
+        width: 100%;
+        display: flex;  /* Cambia a un formato de fila flex */
+       justify-content: center;
+       padding: 0;
+    }
+
+    header .redes ul li {
+        /* Estilos para cada elemento de la lista de redes sociales */
+        padding: 0;
+        margin-bottom: 10px; /* Espacio entre elementos */
+    }
+}
+}

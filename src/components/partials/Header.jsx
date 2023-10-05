@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import Navegar from '../Navegar/Navegar';
+import { NavLink } from 'react-router-dom';
 
 function Header({isMenuOpen, setIsMenuOpen}) {
+
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    };
 
     const [shouldShowInfo, setShouldShowInfo] = useState(false);
 
@@ -47,31 +52,31 @@ function Header({isMenuOpen, setIsMenuOpen}) {
                 <div className={`info ${isMenuOpen ? 'active' : ''}`}>
                     <section className='menu'>
                         <ul>
-                            <Navegar to="/" >
+                        <NavLink to="/" onClick={closeMenu}>
                                 <li>
                                     Finca Propia
                                 </li>
-                            </Navegar>
-                            <Navegar to="/ser-dueno" >
+                                </NavLink>
+                            <NavLink to="/ser-dueno"  onClick={closeMenu} >
                                 <li>
                                     Ser Dueño
                                 </li>
-                            </Navegar>
-                            <Navegar to="/winemaker" >
+                            </NavLink>
+                            <NavLink to="/winemaker" onClick={closeMenu}>
                                 <li>
                                     Winemaker
                                 </li>
-                            </Navegar>
-                            <Navegar to="/finca" >
+                            </NavLink>
+                            <NavLink to="/finca" onClick={closeMenu}>
                                 <li>
                                     La Finca
                                 </li>
-                            </Navegar>
-                            <Navegar to="/contacto" >
+                            </NavLink>
+                            <NavLink to="/contacto" onClick={closeMenu}>
                                 <li>
                                     Contacto
                                 </li>
-                            </Navegar>
+                            </NavLink>
                         </ul>
                     </section>
                     <section className='redes'>
