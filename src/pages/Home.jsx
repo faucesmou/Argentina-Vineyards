@@ -68,9 +68,9 @@ function Home({setIsMenuOpen}) {
                 		src="/video/Finca-propia-sin-sonido-arreglo-1.mp4"
                 		type="video/mp4"/>
             		</video>
-				</div>
+					</div>
 				
-				<div className='Home content'>
+					<div className='Home content'>
 					<section className='cards container'>
 						<article className='experiencia'>
 							<div>

@@ -16,9 +16,6 @@ function App() {
     const isAnchoMayorA769 = window.matchMedia("(min-width: 769px)").matches;
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const closeMenu = () => {
-        setIsMenuOpen(false);
-    }
 
     return (
         <BrowserRouter>
@@ -31,7 +28,7 @@ function App() {
                     <Route path="/winemaker" element={<Winemaker setIsMenuOpen={setIsMenuOpen}  />} />;
                     <Route path="/finca" element={<Finca setIsMenuOpen={setIsMenuOpen}  />} />;
                     <Route path="/contacto" element={<Contacto setIsMenuOpen={setIsMenuOpen} />} />;
-                    <Route path="/los-vinos" element={<LosVinos setIsMenuOpen={setIsMenuOpen} closeMenu={closeMenu} />} />;
+                    <Route path="/los-vinos" element={<LosVinos setIsMenuOpen={setIsMenuOpen} />} />;
                 </Routes>
             </div>
         </BrowserRouter>
