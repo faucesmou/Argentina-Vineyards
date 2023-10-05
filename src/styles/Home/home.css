@@ -34,16 +34,38 @@
 
 /* Media query Tablets */
 @media (min-width: 768px) {
-    .Home .cards{
+    .Home .cards {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
     .Home .cards article .descripcion{
-        height: 100px;
+        height: auto;
     }
     .Home .cards article{
-        width: 22%;
+        width: 22%; 
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 }
+
+@media (max-width: 535px) {
+    .Home .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* Cambiado a 'center' para centrar los elementos */
+      align-items: center;
+    }
+  
+    .Home .cards article {
+      width: 90%; /* Ancho ajustado para ocupar más espacio en pantallas pequeñas */
+      margin-top: 15px; /* Reducido el margen superior */
+      margin-bottom: 15px; /* Reducido el margen inferior */
+    }
+  
+    .Home .cards article .descripcion {
+      height: auto;
+    }
+  }
+

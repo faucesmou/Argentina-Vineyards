@@ -24,8 +24,18 @@ function Finca() {
     };
 
     const handleScroll = () => {
+
+      const scroll2 = window.scrollY;
+			const windowWidth = window.innerWidth;
+			let valorAlto2 = 0
+			if(windowWidth < 450){
+				const element = document.querySelector('.video-completo');
+				element.style.setProperty('min-width', '450px');
+				valorAlto2 = 450
+			}
+      const windowHeight = window.innerHeight - valorAlto2;
       const scroll = window.scrollY;
-      const windowHeight = window.innerHeight;
+      /* const windowHeight = window.innerHeight; */
       const footerHeight = document.querySelector("footer").offsetHeight;
       const contentHeight = document.querySelector(".content").offsetHeight;
       const heightDocument = windowHeight + contentHeight + footerHeight - 20;
@@ -44,11 +54,11 @@ function Finca() {
         windowHeight + "px";
 
       document.getElementById("scroll-animate-main").style.top =
-        "-" + scroll + "px";
+        "-" + scroll2 + "px";
       document.querySelector(".parallax-container").style.backgroundPositionY =
-        50 - (scroll * 100) / heightDocument + "%";
+        50 - (scroll2 * 100) / heightDocument + "%";
 
-      scrollFooter(scroll, footerHeight);
+      scrollFooter(scroll2, footerHeight);
     };
 
     // Agrega un event listener al evento de desplazamiento
@@ -70,8 +80,8 @@ function Finca() {
           className="parallax-container"
           style={{
             backgroundImage: `url(${"/Images/Finca/fondo-finca-2-01.jpg"})`,
-          }}
-        >
+          }}>
+
           <h1>La Finca</h1>
         </div>
         <div className="content">
@@ -119,12 +129,12 @@ function Finca() {
             </article>
           </section>
           <section className="video-completo">
-            <video autoPlay loop muted playsInline>
-              <source
+                <video autoPlay loop muted playsInline>
+                  <source
                 src="/video/WhatsApp-Video-2020-07-02-at-18.50.00.mp4"
                 type="video/mp4"
-              />
-            </video>
+                    />
+                  </video>
 
          {/*    <video
               src="/Images/Finca/WhatsApp-Video-2020-07-02-at-18.50.00.mp4"

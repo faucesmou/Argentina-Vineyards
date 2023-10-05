@@ -141,3 +141,31 @@
         
     }
 }
+
+@media (max-width: 535px) {
+    .Finca .content .legado {
+        max-width: 100%; /* Ancho completo en pantallas pequeñas */
+        padding: 0 20px; /* Espaciado lateral reducido */
+        flex-direction: column; /* Cambio a una columna en pantallas pequeñas */
+        align-items: center; /* Centrar elementos en pantallas pequeñas */
+    }
+    .Finca .content .legado article {
+        width: 100%; /* Ancho completo para artículos en pantallas pequeñas */
+        margin-top: 15px; /* Espaciado superior reducido */
+        margin-bottom: 15px; /* Espaciado inferior reducido */
+    }
+  
+    .botones {
+        text-align: center;
+                
+    }
+    .botones button.black,
+    .botones button.gold {
+        font-size: 14px; /* Reduce el tamaño de fuente de los botones */
+        padding: 8px 16px; /* Ajusta el espaciado interno de los botones */
+        margin: 5px; /* Agrega un pequeño margen entre los botones */
+        height: auto;
+    }
+}
+
+

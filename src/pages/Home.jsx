@@ -18,10 +18,10 @@ console.log('VIDEO HOME--->', videoHome);
 			const scroll = window.scrollY;
 			const windowWidth = window.innerWidth;
 			let valorAlto = 0
-			if(windowWidth < 500){
+			if(windowWidth < 450){
 				const element = document.querySelector('#megavideofinca');
-				element.style.setProperty('min-width', '500px');
-				valorAlto = 500
+				element.style.setProperty('min-width', '450px');
+				valorAlto = 450
 			}
 			const windowHeight = window.innerHeight - valorAlto;
 
@@ -62,16 +62,13 @@ console.log('VIDEO HOME--->', videoHome);
 	return (
 		<div className='Home' id="scroll-animate-main" onClick={toggleMenu}>
 			<div className="wrapper-parallax">
+					{/* <video src="/Images/home/Finca-propia-sin-sonido-arreglo-1.mp4"  autoPlay={true} loop={true} muted="muted" id='megavideofinca'></video> */}
 				<div className='parallax-container'>
-					
-				{/* <video src="/Images/home/Finca-propia-sin-sonido-arreglo-1.mp4"  autoPlay={true} loop={true} muted="muted" id='megavideofinca'></video> */}
-
-            <video autoPlay loop muted playsInline>
-              <source
-                src="/video/Finca-propia-sin-sonido-arreglo-1.mp4"
-                type="video/mp4"
-              />
-            </video>
+            		<video autoPlay loop muted playsInline id='megavideofinca'>
+              		<source
+                		src="/video/Finca-propia-sin-sonido-arreglo-1.mp4"
+                		type="video/mp4"/>
+            		</video>
 				</div>
 				
 				<div className='Home content'>
