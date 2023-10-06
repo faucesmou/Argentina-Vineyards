@@ -167,5 +167,19 @@
         height: auto;
     }
 }
+.legado.logoNegro .imagen-logo img{
+    height:60px;
+}
+
+.legado .logoNegro{
+    display: flex;
+    background-color: #000;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 40px;
+    
+}
 
 

@@ -1,9 +1,18 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../components/partials/Footer";
+import Galeria2 from "../components/Galery/Galeria2";
 
 import axios from "axios";
 
 function Contacto() {
+    const images = [
+    /* "/Images/Finca/MapaArboleda.png", */
+    "/Images/Finca/acceso-propietarios-fondo-01.jpg",
+    /* "/Images/Finca/FincaPropiaMar20-198-scaled.jpg", */
+    "/Images/Finca/FincaPropiaMar20-488-scaled.jpg",
+    "/Images/Finca/fondo-home-01.jpg",
+    /* "/Images/Finca/procesosuvas-02.jpg" */
+  ];
   useEffect(() => {
     const scrollFooter = (scrollY, heightFooter) => {
       if (scrollY >= heightFooter) {
@@ -72,7 +81,7 @@ function Contacto() {
       validationErrors.pais = "El Pais es requerido";
     }
     if (formData2.telefono.trim() === "") {
-      validationErrors.telefono = "El Pais es requerido";
+      validationErrors.telefono = "El Teléfono es requerido";
     }
     if (formData2.email.trim() === "") {
       validationErrors.email = "El email es requerido";
@@ -86,7 +95,7 @@ function Contacto() {
     if (formData2.producto.trim() === "") {
       validationErrors.producto = "El Producto es requerido";
     }
-
+    setFormSubmitted(false);
     return validationErrors;
   };
 
@@ -292,6 +301,9 @@ function Contacto() {
               <button onClick={handleSubmit} type="submit">
                 Enviar
               </button>
+              {formSubmitted && (
+          <span className="envioExito">Formulario enviado con éxito! A la brevedad nos comunicaremos con usted.</span>
+        )}
             </form>
           </section>
           <section className="contenedorOficinas">
@@ -318,7 +330,14 @@ function Contacto() {
                   />
                 </div>
               </section>
+              
             </section>
+           {/*  <section className='logoNegro'>
+                <Galeria2 images={images} />
+                              <div className='imagen-logo'>
+                                <img src="/Images/footer/logo-blanco-fondo-negro-150x100-04.png" alt="Finca-Propia-Logo" />
+                            </div>
+            </section> */}
           </section>
         </div>
 

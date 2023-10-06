@@ -1,20 +1,236 @@
-.LosVinos{
-    
-}
-.LosVinos{
 
+.LosVinos .datos {
+    padding: 20px 50px;
 }
 
-.LosVinos .vinos .signature p.drop-cap{
+.LosVinos .datos article h3{
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.LosVinos .content .datos .vinos p.drop-cap{
     font-size: 15px;
     line-height: 26px;
-    letter-spacing: 1px;/* Espaciado de línea */
-    margin-bottom: 20px; /* Espacio entre párrafos */
+    letter-spacing: 1px;
+    margin-bottom: 20px; 
     overflow: hidden;
 }
+.LosVinos .datos article span.light{
+    color: #626262;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .LosVinos .vinos .signature p span.letraGrande{
     float: left;
     font-size: 72px; /* Tamaño de fuente de la letra inicial */
     margin-right: 8px; /* Espacio entre la letra inicial y el texto */
     line-height: 1; 
+}
+
+.LosVinos h2.foot{
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+    color:black;
+}
+
+
+.content .datos .buttons .dorado{
+    padding: 18px 77px;
+    width: auto; 
+    text-align: center;
+    background-color: #b89351;
+    color: #ffffff;
+    border: none;
+    font-size: 120%;
+    line-height: 120%;
+    margin-top: 10px;
+   
+}
+
+.vinos .logoNegro .imagen-logo img{
+    height:40px;
+}
+
+.vinos {
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+.signature {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
+.vinos .logoNegro{
+    display: flex;
+    background-color: #000;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 40px;
+    width: 50%;
+    
+}
+
+/* Estilos para pantallas más grandes (min-width: 768px) */
+@media (min-width: 768px) {
+    .LosVinos .datos {
+        padding: 20px 50px;
+    }
+
+    .LosVinos .datos article h3 {
+        font-size: 40px;
+        font-weight: lighter;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+    }
+
+    .LosVinos .content .datos .vinos p.drop-cap {
+        font-size: 15px;
+        line-height: 26px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+
+    .LosVinos .datos article span.light {
+        color: #626262;
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .LosVinos .vinos .signature p span.letraGrande {
+        font-size: 72px;
+        margin-right: 8px;
+        line-height: 1;
+    }
+
+    .LosVinos h2.foot {
+        font-size: 30px;
+        font-weight: lighter;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+        text-align: center;
+        color: black;
+    }
+
+    .content .datos .buttons .dorado {
+        padding: 18px 77px;
+    }
+
+    .vinos .logoNegro .imagen-logo img {
+        height: 40px;
+    }
+
+    .vinos {
+        margin-top: 20px;
+    }
+
+    .signature {
+        width: 50%;
+    }
+
+    .vinos .logoNegro {
+        margin: 0 40px;
+        width: 50%;
+    }
+}
+
+/* Estilos para pantallas más pequeñas (max-width: 535px) */
+@media (max-width: 535px) {
+    .LosVinos .datos {
+        padding: 20px; 
+    }
+
+    .LosVinos .datos article h3 {
+        font-size: 30px; 
+        margin-bottom: 10px; 
+    }
+
+    .LosVinos .content .datos .vinos p.drop-cap {
+        font-size: 14px; 
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .LosVinos .datos article span.light {
+        font-size: 12px; 
+        margin-top: 5px; 
+        margin-bottom: 5px;
+    }
+
+    .LosVinos .vinos .signature p span.letraGrande {
+        font-size: 50px; 
+        margin-right: 4px; 
+    }
+
+    .LosVinos h2.foot {
+        font-size: 24px;
+        margin-top: 10px; 
+        margin-bottom: 10px; 
+    }
+
+    .content .datos .buttons .dorado {
+        padding: 15px 40px; 
+        width: 100%; 
+    }
+
+    .vinos .logoNegro .imagen-logo img {
+        height: 30px; 
+    }
+
+    .vinos {
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 10px; 
+    }
+
+    .signature {
+        width: 100%; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .vinos .logoNegro {
+        width: 100%;
+        align-items: center; 
+        margin: 10px 0;
+    }
+}
+
+/* Estilos para pantallas más pequeñas que 768px pero mayores que 535px */
+@media (min-width: 536px) and (max-width: 767px) {
+    .content .datos .buttons {
+        text-align: center; /* Centrar los botones horizontalmente */
+    }
+
+    .content .datos .buttons .dorado {
+        width: auto; /* Ancho automático para que los botones se ajusten al contenido */
+        margin: 5px 0; /* Espacio entre botones, puedes ajustar según tus preferencias */
+    }
 }

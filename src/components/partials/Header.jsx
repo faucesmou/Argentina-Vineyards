@@ -12,6 +12,14 @@ function Header({isMenuOpen, setIsMenuOpen}) {
           });
     };
 
+        /* DROP DOWN NAVBAR */
+
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  
+    const toggleDropdown = () => {
+      setIsDropdownOpen(!isDropdownOpen);
+    };
+
     const [shouldShowInfo, setShouldShowInfo] = useState(false);
 
     const toggleMenu = () => {
@@ -69,6 +77,11 @@ function Header({isMenuOpen, setIsMenuOpen}) {
                             <NavLink to="/winemaker" onClick={closeMenu}>
                                 <li>
                                     Winemaker
+                                </li>
+                            </NavLink>
+                            <NavLink to="/los-vinos" onClick={closeMenu}>
+                                <li>
+                                    Los Vinos
                                 </li>
                             </NavLink>
                             <NavLink to="/finca" onClick={closeMenu}>

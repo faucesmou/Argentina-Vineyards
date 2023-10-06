@@ -108,10 +108,13 @@ h2 {
   button:hover {
     background-color: #585f67;
   }
-  .error-message {
+  span.error-message  {
     color: rgb(255, 102, 0); 
     font-size: 12px; 
     margin-top: 4px; 
+  }
+  .envioExito {
+    color: rgb(255, 102, 0); 
   }
   .contenedorOficinas {
     max-width: 708px;

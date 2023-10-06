@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import Footer from "../components/partials/Footer";
-/* import Galeria from "../components/Galery/Galeria"; */
+import Galeria from "../components/Galery/Galeria";
 import Galeria2 from "../components/Galery/Galeria2";
 import Navegar from "../components/Navegar/Navegar";
+
 
 function Finca() {
   const images = [
@@ -34,7 +35,7 @@ function Finca() {
 				valorAlto2 = 450
 			}
       const windowHeight = window.innerHeight - valorAlto2;
-      const scroll = window.scrollY;
+    /*   const scroll = window.scrollY; */
       /* const windowHeight = window.innerHeight; */
       const footerHeight = document.querySelector("footer").offsetHeight;
       const contentHeight = document.querySelector(".content").offsetHeight;
@@ -111,8 +112,12 @@ function Finca() {
             </article>
 
             {/*   <Galeria images={images} /> */}
-
-            <Galeria2 images={images} />
+            <section className='logoNegro'>
+                <Galeria2 images={images} />
+                              <div className='imagen-logo'>
+                                <img src="/Images/footer/logo-blanco-fondo-negro-150x100-04.png" alt="Finca-Propia-Logo" />
+                            </div>
+            </section>
 
             <article>
               <p className="drop-cap">
@@ -128,6 +133,8 @@ function Finca() {
               </p>
             </article>
           </section>
+          
+
           <section className="video-completo">
                 <video autoPlay loop muted playsInline>
                   <source
