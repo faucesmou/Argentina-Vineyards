@@ -195,9 +195,20 @@
         margin-bottom: 10px; 
     }
 
+    .content .datos .buttons {
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    /* .conocer-mas{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    } */
     .content .datos .buttons .dorado {
         padding: 15px 40px; 
-        width: 100%; 
+        width: 90%; 
     }
 
     .vinos .logoNegro .imagen-logo img {
@@ -214,6 +225,7 @@
         width: 100%; 
         align-items: center; 
         text-align: center; 
+        text-align: justify;
     }
 
     .vinos .logoNegro {
@@ -225,12 +237,35 @@
 
 /* Estilos para pantallas más pequeñas que 768px pero mayores que 535px */
 @media (min-width: 536px) and (max-width: 767px) {
+
+    .LosVinos .datos {
+        padding: 20px; 
+    }
+
+    .vinos {
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 10px; 
+    }
+    .signature {
+        width: 100%; 
+        align-items: center; 
+        text-align: center; 
+        text-align: justify;
+    }
+    .vinos .logoNegro {
+        width: 100%;
+        align-items: center; 
+        margin: 10px 0;
+    }
+
     .content .datos .buttons {
         text-align: center; /* Centrar los botones horizontalmente */
+        padding: 10px 5px;
     }
 
     .content .datos .buttons .dorado {
         width: auto; /* Ancho automático para que los botones se ajusten al contenido */
-        margin: 5px 0; /* Espacio entre botones, puedes ajustar según tus preferencias */
+        margin: 0px 0px; /* Espacio entre botones, puedes ajustar según tus preferencias */
     }
 }

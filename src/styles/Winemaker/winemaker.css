@@ -120,11 +120,13 @@
         gap: 20px; /* Espacio entre elementos */
     }
 
-    .Winemaker .datos .vines-item {
+    .Winemaker .datos .vines-item, .Winemaker .datos .vines {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: justify;
+        padding: 10px 5px;
+
     }
 
     .Winemaker .datos .vines-grid-reverse .vines-item {
@@ -146,12 +148,12 @@
     .Winemaker .datos .wineMakerImage1 {
         width: 100%; /* Ocupar todo el ancho disponible */
         max-width: 400px; /* Establecer un ancho máximo para evitar que el contenido sea demasiado ancho en pantallas grandes */
-        padding: 0 20px;
+        padding: 0 5px;
     }
 
     .Winemaker .datos .vines-grid-reverse  .vines-item .innovacion, .Winemaker .datos .vines-grid-reverse .vines-item .wineMakerImage1{
         width: 100%;
-        padding: 0 20px;
+        padding: 10px 5px;
         display: flex;
         flex-direction: column;
         text-align: justify;
@@ -159,7 +161,7 @@
 
     .Winemaker .datos .innovacion, .Winemaker .datos .wineMakerImage1{
         width: 100%;
-        padding: 0 20px;
+        padding: 10px 5px;
         display: flex;
         flex-direction: column;
         text-align: justify;
@@ -184,6 +186,12 @@
         font-size: 14px; /* Reduce el tamaño del texto */
         line-height: 22px; /* Ajusta el espaciado entre líneas */
         margin-bottom: 15px; /* Reduce el espacio entre párrafos */
+    }
+    .bottomPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 5px;
     }
 }
 
