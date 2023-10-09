@@ -79,8 +79,8 @@ function LosVinos() {
           <div className="datos">
             <section className="vinos">
               <article className="signature">
-                <h3>Finca Propia Signature</h3>
-                <p className="drop-cap">
+                    <h3>Finca Propia Signature</h3>
+                    <p className="drop-cap">
                   <span span className="letraGrande">
                     T
                   </span>
@@ -89,31 +89,31 @@ function LosVinos() {
                   reflejando las características del terroir de La Arboleda,
                   tienen un perfil aromático intenso y fresco por el equilibrio
                   de la acidez.
-                </p>
-                <span className="light">
+                    </p>
+                    <span className="light">
                   Al adquirir tu hilera en Viña La Arboleda, podés recibir tu
                   producción en vinos personalizados con tu nombre y firma. Los
                   propietarios de Terroir además, contarán con el beneficio de
                   diseñar su propia etiqueta, proceso que implica el registro de
                   la marca en el INPI y aprobación por el Instituto Nacional de
                   Vitivinicultura {`(INV)`}.
-                </span>
-                <span className="light">
+                    </span>
+                    <span className="light">
                   Al adquirir tu hilera en Viña La Arboleda, podés recibir tu
                   producción en vinos personalizados con tu nombre y firma. Los
                   propietarios de Terroir además, contarán con el beneficio de
                   diseñar su propia etiqueta, proceso que implica el registro de
                   la marca en el INPI y aprobación por el Instituto Nacional de
                   Vitivinicultura {`(INV)`}.
-                </span>
-                <span className="light">
+                    </span>
+                    <span className="light">
                   Al adquirir tu hilera en Viña La Arboleda, podés recibir tu
                   producción en vinos personalizados con tu nombre y firma. Los
                   propietarios de Terroir además, contarán con el beneficio de
                   diseñar su propia etiqueta, proceso que implica el registro de
                   la marca en el INPI y aprobación por el Instituto Nacional de
                   Vitivinicultura {`(INV)`}.
-                </span>
+                     </span>
               </article>
 
               <section className="logoNegro">

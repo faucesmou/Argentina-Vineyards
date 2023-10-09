@@ -37,6 +37,7 @@
     margin-bottom: 20px; /* Espacio entre párrafos */
     /* Estilos de la letra inicial */
     overflow: hidden;
+    text-align: justify;
 }
 
 .Finca .content .legado p span.letraGrande{
@@ -53,6 +54,7 @@
     font-weight: 400;
     color: #626262;
     text-align: center;
+    text-align: justify;
 }
 .Finca .content .video-completo {
     width: 100%;
@@ -138,6 +140,7 @@
         /* Estilos de la letra inicial */
         overflow: hidden;
         width: auto;
+        text-align: justify;
         
     }
 }
@@ -166,20 +169,25 @@
         margin: 5px; /* Agrega un pequeño margen entre los botones */
         height: auto;
     }
-}
-.legado.logoNegro .imagen-logo img{
-    height:60px;
-}
 
-.legado .logoNegro{
-    display: flex;
-    background-color: #000;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 0 40px;
+    .content .legado .logoNegro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #000;
+        margin: 0; /* Elimina el margen horizontal */
+        padding: 10px 0; /* Espaciado interior superior e inferior */
+        max-width: 100%;
+      }
+    
+      .content .logoNegro .imagen-logo img {
+        height: 30px;
+        max-width: 100%;
+      
+      }
     
 }
+
 
 

@@ -87,6 +87,7 @@ function Finca() {
         </div>
         <div className="content">
           <section className="legado">
+          <section className="vinos">
             <article>
               <h2>Nuestro Legado</h2>
               <p className="drop-cap">
@@ -112,11 +113,12 @@ function Finca() {
             </article>
 
             {/*   <Galeria images={images} /> */}
+
             <section className='logoNegro'>
                 <Galeria2 images={images} />
-                              <div className='imagen-logo'>
+                      <div className='imagen-logo'>
                                 <img src="/Images/footer/logo-blanco-fondo-negro-150x100-04.png" alt="Finca-Propia-Logo" />
-                            </div>
+                      </div>
             </section>
 
             <article>
@@ -149,6 +151,7 @@ function Finca() {
               loop={true}
               muted="muted"
             ></video> */}
+          </section>
           </section>
           <section className="conocer-mas">
             <h2>
