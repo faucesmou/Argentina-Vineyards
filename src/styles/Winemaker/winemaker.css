@@ -1,9 +1,38 @@
-.Winemaker {
-    
-}
-.Winemaker .datos {
+
+.Winemaker .datos .vines, .Winemaker .datos .vines-item{
     padding: 20px 50px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no quepan en una fila */
+  justify-content: space-between; /* Distribuye los elementos de manera uniforme */ 
 }
+
+.Winemaker .datos .innovacion, .Winemaker .datos .wineMakerImage1{
+    width: 50%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Se replican estilos para contenedor e items del contenedor grid "reverse" que se implementa para intercalar texto foto texto en pantallas pequeñas */
+.Winemaker .datos .vines-grid-reverse .vines-item .innovacion, .Winemaker .datos .vines-grid-reverse .vines-item .wineMakerImage1{
+    width: 50%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Winemaker .datos .wineMakerImage1 {
+    align-items: center;
+    justify-content: center; 
+}
+
+.Winemaker .datos .wineMakerImage1 img {
+    height:auto
+}
+
+
 .Winemaker .datos .titular-principal{
     color: #787878;
     font-style: italic;
@@ -25,6 +54,7 @@
     letter-spacing: 1px;
 }
 
+
 .Winemaker .datos article p.drop-cap{
     font-size: 15px;
     line-height: 26px;
@@ -32,6 +62,7 @@
     margin-bottom: 20px; /* Espacio entre párrafos */
     /* Estilos de la letra inicial */
     overflow: hidden;
+    text-align: justify;
 }
 .Winemaker .datos article p span.letraGrande{
     float: left;
@@ -44,10 +75,13 @@
     font-size: 13px;
     line-height: 19px;
     letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
 }
-.Winemaker .datos article img{
-    margin: 20px 0;
-}
+/* .Winemaker .datos article img{
+    margin: 0px 0;
+} */
 .Winemaker h2.foot{
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
@@ -68,3 +102,93 @@
     font-size: 120%;
     line-height: 120%;
 }
+
+.bottomPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+/* Estilos para pantallas menores de 767px */
+@media (max-width: 767px) {
+
+/* A continuación se usa un GRID para lograr que en pantallas pequeñas se intercale texto-foto-texto (cambiando el orden de los componentes)*/
+    .Winemaker .datos .vines-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* Una sola columna */
+        gap: 20px; /* Espacio entre elementos */
+    }
+
+    .Winemaker .datos .vines-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .Winemaker .datos .vines-grid-reverse .vines-item {
+        flex-direction: column-reverse; /* Invertir el orden de los elementos */
+    }
+
+
+    /* hasta acá lo de grid implementado para que se intercale texto foto texto foto*/
+    
+    .Winemaker .datos {
+        padding: 20px 10px; /* Reducimos el padding en pantallas pequeñas */
+        display: flex;
+        flex-direction: column; /* Apilar secciones una encima de la otra */
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .Winemaker .datos .innovacion,
+    .Winemaker .datos .wineMakerImage1 {
+        width: 100%; /* Ocupar todo el ancho disponible */
+        max-width: 400px; /* Establecer un ancho máximo para evitar que el contenido sea demasiado ancho en pantallas grandes */
+        padding: 0 20px;
+    }
+
+    .Winemaker .datos .vines-grid-reverse  .vines-item .innovacion, .Winemaker .datos .vines-grid-reverse .vines-item .wineMakerImage1{
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    .Winemaker .datos .innovacion, .Winemaker .datos .wineMakerImage1{
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+    }
+
+
+    .Winemaker .datos .wineMakerImage1 img {
+        max-width: 100%; /* Asegurar que las imágenes se ajusten al ancho del contenedor */
+        height: auto;
+        margin-top: 10px;
+    }
+    
+    .Winemaker .datos .titular-principal {
+        font-size: 30px; /* Reduce el tamaño del título */
+    }
+
+    .Winemaker .datos article h3 {
+        font-size: 30px; /* Reduce el tamaño del subtítulo */
+    }
+
+    .Winemaker .datos article p.drop-cap {
+        font-size: 14px; /* Reduce el tamaño del texto */
+        line-height: 22px; /* Ajusta el espaciado entre líneas */
+        margin-bottom: 15px; /* Reduce el espacio entre párrafos */
+    }
+}
+
+
+
+
+
+

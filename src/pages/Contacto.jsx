@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../components/partials/Footer";
-import Galeria2 from "../components/Galery/Galeria2";
+/* import Galeria2 from "../components/Galery/Galeria2"; */
 
 import axios from "axios";
 

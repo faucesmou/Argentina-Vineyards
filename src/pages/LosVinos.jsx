@@ -82,12 +82,7 @@ function LosVinos() {
                                 </section>
                            
                                     </section>
-                                                            {/*   <section>
-                                                        <article>
-                                                <img src="" alt="Seleccion de vinos" />
-                                            </article>
-                                            <img src="" alt="Analisis sensorial" /> 
-                                                        </section> */}
+                                                           
                                 <h2 className='foot' >Conoce más sobre cómo ser dueño o comunicate con un asesor comercial.</h2>
                                 <section className="conocer-mas">
                                 <section className='buttons'>
