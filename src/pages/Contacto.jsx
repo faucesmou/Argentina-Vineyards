@@ -310,7 +310,7 @@ function Contacto() {
             <section className="conocer-mas">
               <article>
                 <h5>
-                  Conoce más sobre cómo ser dueño o comunícate con un asesor!
+                  Conoce más sobre cómo ser dueño o comunícate con un asesor.
                 </h5>
                 {/*    <iframe
                 loading="lazy"

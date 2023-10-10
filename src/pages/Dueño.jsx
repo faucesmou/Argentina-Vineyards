@@ -58,6 +58,7 @@ function Dueño() {
                         <section className='sueño'>
                             <h2>El sueño de la finca propia</h2>
                             <p className='drop-cap'><span className='letraGrande'>N</span>uestra misión es acompañar a todos los amantes del vino en un camino de crecimiento y aprendizaje como productores vitivinícolas.
+                            
                                 <br />Ser parte de Finca Propia significa ser dueño de un viñedo en el mejor terroir de la Argentina.
                                 <br />Agasaja a tus seres queridos con tu producción de <span className='dorado'>vinos</span>. Tu finca, tu legado para toda la vida.</p>
                             <p className='menor'>En el camino te proponemos 3 formas distintas de hacerlo realidad: 24 vides, Hilera y Terroir</p>

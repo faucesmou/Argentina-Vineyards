@@ -1,53 +1,51 @@
-
 .Finca .content {
     padding-top: 20px
 }
-.Finca .content .legado{
+
+.Finca .content .legado {
     padding: 0 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.Finca .content .legado .article{
+
+.Finca .content .legado .article {
     width: 100%;
     text-align: center;
 }
-.Finca .content .legado h2{
+
+.Finca .content .legado h2 {
     font-size: 25px;
     line-height: 30px;
     letter-spacing: 1px;
     font-weight: 300;
     text-align: center;
-    font-family: "Playfair Display",Arial,Tahoma,sans-serif;
+    font-family: "Playfair Display", Arial, Tahoma, sans-serif;
     margin-bottom: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid #cdcecf;
     color: black;
 }
-/* .Finca .content .legado .drop-cap .letraGrande {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-.Finca .content .legado p.drop-cap{
+
+.Finca .content .legado p.drop-cap {
     font-size: 13px;
     line-height: 19px;
     letter-spacing: 1px;
-    margin-bottom: 20px; /* Espacio entre párrafos */
-    /* Estilos de la letra inicial */
+    margin-bottom: 20px;
     overflow: hidden;
     text-align: justify;
 }
 
-.Finca .content .legado p span.letraGrande{
+.Finca .content .legado p span.letraGrande {
     float: left;
-    font-size: 72px; /* Tamaño de fuente de la letra inicial */
-    margin-right: 8px; /* Espacio entre la letra inicial y el texto */
-    line-height: 1; 
+    font-size: 72px;
+    margin-right: 8px;
+    line-height: 1;
     text-align: center;
 }
-.Finca .content .legado p.arboleda{
+
+.Finca .content .legado p.arboleda {
     font-size: 13px;
     line-height: 19px;
     letter-spacing: 0px;
@@ -56,9 +54,22 @@
     text-align: center;
     text-align: justify;
 }
+
+.content .legado .finca .logoNegro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    margin: 0;
+    padding: 10px 0;
+    max-width: 100%;
+}
+
 .Finca .content .video-completo {
     width: 100%;
 }
+
 .Finca .content .video-completo video {
     width: 100%;
 }
@@ -68,13 +79,15 @@
     padding: 20px 20px 0;
     margin-bottom: 0px;
 }
-.Finca .content .conocer-mas h2{
+
+.Finca .content .conocer-mas h2 {
     font-size: 32px;
     line-height: 50px;
     font-weight: 300;
     letter-spacing: 1px;
     text-align: center;
 }
+
 .Finca .content .conocer-mas .botones {
     display: flex;
     flex-direction: column;
@@ -83,7 +96,8 @@
     align-items: center;
     height: 180px;
 }
-.Finca .content .conocer-mas .botones .black{
+
+.Finca .content .conocer-mas .botones .black {
     display: block;
     float: left;
     position: relative;
@@ -91,10 +105,11 @@
     padding: 18px 33px;
     background-color: #000000;
     color: #ffffff;
-    
+
     border: none;
 }
-.Finca .content .conocer-mas .botones .gold{
+
+.Finca .content .conocer-mas .botones .gold {
     padding: 18px 33px;
     width: 350px;
     text-align: center;
@@ -104,90 +119,156 @@
     font-size: 120%;
     line-height: 120%;
 }
-.conocer-mas h2{
-    color:#000000;
+
+.conocer-mas h2 {
+    color: #000000;
 }
 
 @media (min-width: 768px) {
-    .Finca .content .legado{
+    .Finca .content .legado {
         max-width: 1440px;
         padding: 0 100px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .Finca .content .legado article{
+
+    .Finca .content .legado article {
         width: 100%;
         margin-top: 25px;
         margin-bottom: 25px;
     }
-  
-    .Finca .content .legado h2{
+
+    .Finca .content .legado h2 {
         font-size: 36px;
         line-height: 43px;
         letter-spacing: 1px;
         font-weight: 300;
-        font-family: "Playfair Display",Arial,Tahoma,sans-serif;
+        font-family: "Playfair Display", Arial, Tahoma, sans-serif;
         margin-bottom: 15px;
         padding-bottom: 15px;
         border-bottom: 1px solid #cdcecf;
     }
-    .Finca .content .legado p.drop-cap{
+
+    .Finca .content .legado p.drop-cap {
         font-size: 15px;
         line-height: 26px;
-        letter-spacing: 1px;/* Espaciado de línea */
-        margin-bottom: 20px; /* Espacio entre párrafos */
+        letter-spacing: 1px;
+        /* Espaciado de línea */
+        margin-bottom: 20px;
+        /* Espacio entre párrafos */
         /* Estilos de la letra inicial */
         overflow: hidden;
         width: auto;
         text-align: justify;
-        
+
     }
 }
 
 @media (max-width: 535px) {
+
+    .Finca .legado {
+        padding: 20px;
+    }
+
     .Finca .content .legado {
-        max-width: 100%; /* Ancho completo en pantallas pequeñas */
-        padding: 0 20px; /* Espaciado lateral reducido */
-        flex-direction: column; /* Cambio a una columna en pantallas pequeñas */
-        align-items: center; /* Centrar elementos en pantallas pequeñas */
+        max-width: 100%;
+        padding: 0 20px;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .Finca .content .legado {
+        width: 100%;
+        padding: 20px 20px 0;
+        ;
+    }
+
+    .Finca .legado article h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .Finca .content .legado .finca p.drop-cap {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .Finca .legado article p.arboleda {
+        font-size: 12px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
     .Finca .content .legado article {
-        width: 100%; /* Ancho completo para artículos en pantallas pequeñas */
-        margin-top: 15px; /* Espaciado superior reducido */
-        margin-bottom: 15px; /* Espaciado inferior reducido */
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+       
     }
-  
+
+
+    .Finca .content .conocer-mas .video-completo {
+        padding: 20px 20px;
+        max-width: 100%;
+        text-align: center;
+   /*      background-color: rgb(237, 225, 225); */
+        color: #ffffff;
+        border: none;
+    }
+    .Finca .content .video-completo {
+        max-width: 100% ;
+        padding: 0;
+        margin: 0;
+     
+    }
+
+    .Finca .content .video-completo video {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      
+    }
+
     .botones {
         text-align: center;
-                
+
     }
+
     .botones button.black,
     .botones button.gold {
-        font-size: 14px; /* Reduce el tamaño de fuente de los botones */
-        padding: 8px 16px; /* Ajusta el espaciado interno de los botones */
-        margin: 5px; /* Agrega un pequeño margen entre los botones */
+        font-size: 14px;
+        padding: 8px 16px;
+        margin: 5px;
         height: auto;
     }
 
-    .content .legado .logoNegro {
+    .content .legado .finca .logoNegro {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: #000;
-        margin: 0; /* Elimina el margen horizontal */
-        padding: 10px 0; /* Espaciado interior superior e inferior */
+        margin: 0;
+        padding: 10px 0;
         max-width: 100%;
-      }
-    
-      .content .logoNegro .imagen-logo img {
+    }
+
+    .content .legado .finca .logoNegro .imagen-logo img {
         height: 30px;
         max-width: 100%;
-      
-      }
-    
+    }
+
+    .content .legado .finca .logoNegro .imagen-logo img {
+        max-width: 100%;
+        height: 30px;
+    }
+
+    .finca {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
 }
-
-
-

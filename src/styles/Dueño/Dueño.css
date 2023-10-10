@@ -17,6 +17,7 @@
 .Dueño .sueño p{
     margin: 0 0 15px;
     font-family: "Roboto",Arial,Tahoma,sans-serif;
+    text-align: justify;
 }
 .Dueño .sueño p.drop-cap{
     font-size: 15px;
@@ -25,6 +26,7 @@
     margin-bottom: 20px; /* Espacio entre párrafos */
     /* Estilos de la letra inicial */
     overflow: hidden;
+    text-align: justify;
 }
 .Dueño .sueño p span.letraGrande{
     float: left;
@@ -81,6 +83,7 @@
 }
 .Dueño .vides .produccion{
     margin: 20px 40px;
+    text-align: justify;
 }
 .Dueño .vides .produccion h4{
     margin: 10px 0 20px;

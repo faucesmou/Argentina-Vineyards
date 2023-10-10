@@ -31,7 +31,7 @@ function Finca() {
 			let valorAlto2 = 0
 			if(windowWidth < 450){
 				const element = document.querySelector('.video-completo');
-				element.style.setProperty('min-width', '450px');
+				element.style.setProperty('min-width', '350px');
 				valorAlto2 = 450
 			}
       const windowHeight = window.innerHeight - valorAlto2;
@@ -87,34 +87,35 @@ function Finca() {
         </div>
         <div className="content">
           <section className="legado">
-          <section className="vinos">
-            <article>
-              <h2>Nuestro Legado</h2>
-              <p className="drop-cap">
-                <span className="letraGrande">A</span>76 km de la Ciudad de
-                Mendoza, nuestros viñedos se encuentran ubicados en Valle de
-                Uco, departamento de Tupungato, región reconocida por sus
-                inigualables condiciones para producir los vinos más finos. El
-                clima de la región aporta la amplitud térmica que demandan los
-                vinos de alta gama, donde destacadas bodegas vecinas como Catena
-                Zapata, Rutini, Salentein, entre otras, también han elegido la
-                zona y el terruño como el espacio ideal para desarrollar sus
-                producciones.
-              </p>
-              <p className="arboleda">
-                Finca La Arboleda cuenta con un terreno de{" "}
-                <strong>56 hectáreas</strong>, de más de 40 plantadas por partes
-                iguales con cepas de{" "}
-                <strong>Malbec, Cabernet Sauvignon y Chardonnay</strong>, a una
-                altura promedio de{" "}
-                <strong>950 metros sobre el nivel del mar</strong>, custodiada
-                por la magnífica <strong>Cordillera de los Andes</strong>.
-              </p>
-            </article>
+            
+            <section className="finca">
+                <article className="signature">
+                          <h2>Nuestro Legado</h2>
+                          <p className="drop-cap">
+                              <span className="letraGrande">A</span>76 km de la Ciudad de
+                            Mendoza, nuestros viñedos se encuentran ubicados en Valle de
+                          Uco, departamento de Tupungato, región reconocida por sus
+                          inigualables condiciones para producir los vinos más finos. El
+                          clima de la región aporta la amplitud térmica que demandan los
+                          vinos de alta gama, donde destacadas bodegas vecinas como Catena
+                          Zapata, Rutini, Salentein, entre otras, también han elegido la
+                          zona y el terruño como el espacio ideal para desarrollar sus
+                          producciones.
+                        </p>
+                          <p className="arboleda">
+                            Finca La Arboleda cuenta con un terreno de{" "}
+                            <strong>56 hectáreas</strong>, de más de 40 plantadas por partes
+                            iguales con cepas de{" "}
+                            <strong>Malbec, Cabernet Sauvignon y Chardonnay</strong>, a una
+                            altura promedio de{" "}
+                            <strong>950 metros sobre el nivel del mar</strong>, custodiada
+                            por la magnífica <strong>Cordillera de los Andes</strong>.
+                          </p>
+              </article>
 
-            {/*   <Galeria images={images} /> */}
+              {/*   <Galeria images={images} /> */}
 
-            <section className='logoNegro'>
+              <section className='logoNegro'>
                 <Galeria2 images={images} />
                       <div className='imagen-logo'>
                                 <img src="/Images/footer/logo-blanco-fondo-negro-150x100-04.png" alt="Finca-Propia-Logo" />
@@ -136,24 +137,16 @@ function Finca() {
             </article>
           </section>
           
-
+          </section>
+          <section className="conocer-mas">
           <section className="video-completo">
-                <video autoPlay loop muted playsInline>
+                <video autoPlay loop muted  playsInline>
                   <source
                 src="/video/WhatsApp-Video-2020-07-02-at-18.50.00.mp4"
                 type="video/mp4"
                     />
                   </video>
-
-         {/*    <video
-              src="/Images/Finca/WhatsApp-Video-2020-07-02-at-18.50.00.mp4"
-              autoPlay={true}
-              loop={true}
-              muted="muted"
-            ></video> */}
           </section>
-          </section>
-          <section className="conocer-mas">
             <h2>
               Conoce más sobre cómo ser dueño o comunícate con un asesor
               comercial.
@@ -175,3 +168,10 @@ function Finca() {
 }
 
 export default Finca;
+
+{/*    <video
+     src="/Images/Finca/WhatsApp-Video-2020-07-02-at-18.50.00.mp4"
+     autoPlay={true}
+     loop={true}
+     muted="muted"
+   ></video> */}
