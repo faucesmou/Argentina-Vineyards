@@ -133,15 +133,15 @@ function LosVinos() {
             </h2>
             <section className="conocer-mas">
               <section className="buttons">
-                <Navegar to="/ser-dueno">
+                <Navegar to="/contacto">
                   <button className="dorado">
                     Descargar el análisis sensorial
                   </button>
-                  <Navegar to="/ser-dueno">
+                  <Navegar to="/contacto">
                     <button className="dorado">Ser Dueño</button>
                   </Navegar>
                 </Navegar>
-                <Navegar to="/ser-dueno">
+                <Navegar to="/contacto">
                   <button className="dorado">
                     Contactar un asesor comercial
                   </button>

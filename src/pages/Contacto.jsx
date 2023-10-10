@@ -274,7 +274,6 @@ function Contacto() {
                   <span className="error-message">{errors.horario}</span>
                 )}
               </div>
-
               <div className="inputContainer">
                 <select
                   id="producto"

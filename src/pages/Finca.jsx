@@ -152,7 +152,7 @@ function Finca() {
               comercial.
             </h2>
             <div className="botones">
-              <Navegar to="/ser-dueno">
+              <Navegar to="/contacto">
                 <button className="black">Ser Dueño</button>
               </Navegar>
               <Navegar to="/contacto">

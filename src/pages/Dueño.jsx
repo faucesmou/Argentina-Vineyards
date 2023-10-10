@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Slider from '../components/Slider/Slider';
 import Footer from '../components/partials/Footer';
+import Navegar from "../components/Navegar/Navegar";
 
 function Dueño() {
 
@@ -86,7 +87,9 @@ function Dueño() {
                                 <p>Podés ser dueño de 210mts lineales de vid (500m2), con una producción de 375kgs de uva, equivalente a 360 botellas por cosecha. Esta opción te brinda la posibilidad de crear tu propia marca y etiqueta completa. <span>Cosecha asegurada sin riesgos.</span></p>
                             </article>
                             <div className='boton-finca'>
+                            <Navegar to="/contacto">
                                 <button className='propia-finca'>Quiero tener mi propia Finca</button>
+                            </Navegar>
                             </div>
                         </section>
                         <section className='logoNegro'>
@@ -101,7 +104,9 @@ function Dueño() {
                             <div>
                                 <img src="/Images/dueno/PRECIOS-WEB-actualizado-2023-1024x699.png" alt="especificaciones" />
                             </div>
+                            <Navegar to="/contacto">
                             <button>Descarga el cuadro comparativo</button>
+                            </Navegar>
                         </section>
                     </div>
                 </div>

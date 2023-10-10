@@ -53,11 +53,19 @@
 }
 
 @media (max-width: 535px) {
+   
+    .Home .parallax-container video{
+        margin-top: 60px;
+        max-width: fit-content;
+        height: 550px;
+    }
+   
     .Home .cards {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center; /* Cambiado a 'center' para centrar los elementos */
+      justify-content: center; 
       align-items: flex-start;
+      width: 55%;
     }
   
     .Home .cards article {

@@ -17,7 +17,7 @@ function Home({setIsMenuOpen}) {
 			const scroll = window.scrollY;
 			const windowWidth = window.innerWidth;
 			let valorAlto = 0
-			if(windowWidth < 450){
+			if(windowWidth < 400){
 				const element = document.querySelector('#megavideofinca');
 				element.style.setProperty('min-width', '500px');
 				valorAlto = 500
