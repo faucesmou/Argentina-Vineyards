@@ -13,18 +13,17 @@
     font-weight: 400;
     letter-spacing: 1px;
     font-size: 36px;
+    margin-bottom: 20px;
 }
 .Dueño .sueño p{
     margin: 0 0 15px;
-    font-family: "Roboto",Arial,Tahoma,sans-serif;
     text-align: justify;
 }
 .Dueño .sueño p.drop-cap{
     font-size: 15px;
     line-height: 26px;
-    letter-spacing: 1px;/* Espaciado de línea */
-    margin-bottom: 20px; /* Espacio entre párrafos */
-    /* Estilos de la letra inicial */
+    letter-spacing: 1px;
+    margin-bottom: 20px;  
     overflow: hidden;
     text-align: justify;
 }
@@ -65,7 +64,7 @@
 
 .Dueño button{
     padding: 18px 33px;
-    width: 350px;
+    width: auto;
     text-align: center;
     background-color: #b89351;
     color: #ffffff;
@@ -95,3 +94,16 @@
 .Dueño .vides .produccion p span{
     font-weight: 700;
 }
+
+/* @media (max-width: 535px){
+    .Dueño button .goldCuadro {
+        padding: 18px 33px;
+        width: auto;
+        text-align: center;
+        background-color: #b89351;
+        color: #ffffff;
+        border: none;
+        font-size: 90%;
+        line-height: 90%;
+    }
+} */

@@ -88,6 +88,23 @@
     text-align: center;
 }
 
+.h3inca {
+    /* font-size: 25px;
+    padding: 20px 20px;
+    margin-top: 10px;
+    max-width: 100%;
+    text-align: center */
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+        font-size: 30px;
+        font-weight: lighter;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+        text-align: center;
+        color: black;
+}
+
 .Finca .content .conocer-mas .botones {
     display: flex;
     flex-direction: column;
@@ -150,6 +167,22 @@
         border-bottom: 1px solid #cdcecf;
     }
 
+    .h3inca {
+     /*    padding: 20px 20px;
+        margin-top: 10px;
+        max-width: 100%;
+        text-align: center */
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-size-adjust: 100%;
+        font-size: 30px;
+        font-weight: lighter;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+        text-align: center;
+        color: black;
+    }
+
     .Finca .content .legado p.drop-cap {
         font-size: 15px;
         line-height: 26px;
@@ -187,6 +220,22 @@
     .Finca .legado article h2 {
         font-size: 30px;
         margin-bottom: 10px;
+    }
+
+    .h3inca {
+        /* font-size: 24px;
+        padding: 10px 10px;
+        max-width: 100%;
+        text-align: center; */
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-size-adjust: 100%;
+        font-size: 24px;
+        font-weight: lighter;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+        text-align: center;
+        color: black;
     }
 
     .Finca .content .legado .finca p.drop-cap {
@@ -238,10 +287,21 @@
 
     .botones button.black,
     .botones button.gold {
-        font-size: 14px;
+        font-size: 18px;
         padding: 8px 16px;
         margin: 5px;
         height: auto;
+    }
+
+    .Finca .content .conocer-mas .botones .gold {
+        padding: 18px 33px;
+        width: auto;
+        text-align: center;
+        background-color: #b89351;
+        color: #ffffff;
+        border: none;
+        font-size: 120%;
+        line-height: 120%;
     }
 
     .content .legado .finca .logoNegro {

@@ -29,9 +29,9 @@ function Finca() {
       const scroll2 = window.scrollY;
 			const windowWidth = window.innerWidth;
 			let valorAlto2 = 0
-			if(windowWidth < 450){
+			if(windowWidth < 400){
 				const element = document.querySelector('.video-completo');
-				element.style.setProperty('min-width', '350px');
+				element.style.setProperty('min-width', 'auto');
 				valorAlto2 = 450
 			}
       const windowHeight = window.innerHeight - valorAlto2;
@@ -135,22 +135,22 @@ function Finca() {
                 alrededor.
               </p>
             </article>
-          </section>
+            </section>
           
-          </section>
-          <section className="conocer-mas">
-          <section className="video-completo">
+            </section>
+            <section className="conocer-mas">
+                  <section className="video-completo">
                 <video autoPlay loop muted  playsInline>
                   <source
                 src="/video/WhatsApp-Video-2020-07-02-at-18.50.00.mp4"
                 type="video/mp4"
                     />
                   </video>
-          </section>
-            <h2>
+                  </section>
+            <h3 className="h3inca">
               Conoce más sobre cómo ser dueño o comunícate con un asesor
               comercial.
-            </h2>
+            </h3>
             <div className="botones">
               <Navegar to="/contacto">
                 <button className="black">Ser Dueño</button>

@@ -60,8 +60,10 @@ function Dueño() {
                             <h2>El sueño de la finca propia</h2>
                             <p className='drop-cap'><span className='letraGrande'>N</span>uestra misión es acompañar a todos los amantes del vino en un camino de crecimiento y aprendizaje como productores vitivinícolas.
                             
-                                <br />Ser parte de Finca Propia significa ser dueño de un viñedo en el mejor terroir de la Argentina.
-                                <br />Agasaja a tus seres queridos con tu producción de <span className='dorado'>vinos</span>. Tu finca, tu legado para toda la vida.</p>
+                                Ser parte de Finca Propia significa ser dueño de un viñedo en el mejor terroir de la Argentina.
+                                Agasaja a tus seres queridos con tu producción de  
+                                
+                                <span className='dorado'> vinos</span>. Tu finca, tu legado para toda la vida.</p>
                             <p className='menor'>En el camino te proponemos 3 formas distintas de hacerlo realidad: 24 vides, Hilera y Terroir</p>
                         </section>
                         <section className='vides'>
@@ -77,38 +79,38 @@ function Dueño() {
                                     <img src="/Images/dueno/hilera-scaled.jpg" alt="Lineas de produccion" />
                                 </div>
                                 <h4>HILERA</h4>
-                                <p>Accedé a 80mts lineales (200m2), 48 plantas que producen 150kgs de uva equivalente a 144 botellas de La Arboleda con tu personalización junto a la firma del enólogo Antonio Mas.<span>Cosecha asegurada sin riesgos.</span></p>
+                                <p>Accedé a 80mts lineales (200m2), 48 plantas que producen 150kgs de uva equivalente a 144 botellas de La Arboleda con tu personalización junto a la firma del enólogo Antonio Mas.<span> Cosecha asegurada sin riesgos.</span></p>
                             </article>
                             <article className="produccion">
                                 <div>
                                     <img src="/Images/dueno/terroir-scaled.jpg" alt="Lineas de produccion" />
                                 </div>
                                 <h4>TERROIR</h4>
-                                <p>Podés ser dueño de 210mts lineales de vid (500m2), con una producción de 375kgs de uva, equivalente a 360 botellas por cosecha. Esta opción te brinda la posibilidad de crear tu propia marca y etiqueta completa. <span>Cosecha asegurada sin riesgos.</span></p>
+                                <p>Podés ser dueño de 210mts lineales de vid (500m2), con una producción de 375kgs de uva, equivalente a 360 botellas por cosecha. Esta opción te brinda la posibilidad de crear tu propia marca y etiqueta completa. <span> Cosecha asegurada sin riesgos.</span></p>
                             </article>
                             <div className='boton-finca'>
                             <Navegar to="/contacto">
                                 <button className='propia-finca'>Quiero tener mi propia Finca</button>
                             </Navegar>
                             </div>
-                        </section>
-                        <section className='logoNegro'>
+                            </section>
+                             <section className='logoNegro'>
                             <div className='contenedor-slider'>
                                 <Slider />
                             </div>
                             <div className='imagen-logo'>
                                 <img src="/Images/footer/logo-blanco-fondo-negro-150x100-04.png" alt="Finca-Propia-Logo" />
                             </div>
-                        </section>
-                        <section className='comparativo'>
+                            </section>
+                            <section className='comparativo'>
                             <div>
                                 <img src="/Images/dueno/PRECIOS-WEB-actualizado-2023-1024x699.png" alt="especificaciones" />
                             </div>
                             <Navegar to="/contacto">
-                            <button>Descarga el cuadro comparativo</button>
+                            <button className='goldCuadro'>Descarga el cuadro comparativo</button>
                             </Navegar>
-                        </section>
-                    </div>
+                                </section>
+                        </div>
                 </div>
                 <Footer />
             </div>
