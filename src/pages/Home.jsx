@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Footer from '../components/partials/Footer'
-import videoHome from '../assets/home/Finca-propia-sin-sonido-arreglo-1.mp4'
+
 
 function Home({setIsMenuOpen}) {
 	useEffect(() => {
@@ -17,11 +17,13 @@ function Home({setIsMenuOpen}) {
 			const scroll = window.scrollY;
 			const windowWidth = window.innerWidth;
 			let valorAlto = 0
-			/* if(windowWidth < 400){
-				const element = document.querySelector('#megavideofinca');
-				element.style.setProperty('min-width', 'auto');
-				valorAlto = 500
-			} */
+			if(windowWidth < 400){
+				/* const element = document.querySelector('#megavideofinca'); */
+				/* element.style.setProperty('min-width', 'auto'); */
+				valorAlto = 100
+			}
+
+			/* ver que pasa si dejo el valorAlto en 100 (en la versión subida a amplify el if está comentado completamente) */
 			const windowHeight = window.innerHeight - valorAlto;
 			const footerHeight = document.querySelector('footer').offsetHeight;
 			const contentHeight = document.querySelector('.content').offsetHeight;

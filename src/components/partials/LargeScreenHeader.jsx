@@ -10,7 +10,11 @@ function LargeScreenHeader() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
+    console.log("este es el dropdown:", isDropdownOpen)
     setIsDropdownOpen(!isDropdownOpen);
+    setTimeout(() => {
+      setIsDropdownOpen(false);
+    }, 4000);  // 4 segundos
   };
 
   const location = useLocation();
@@ -38,12 +42,38 @@ function LargeScreenHeader() {
           <Navegar to="/ser-dueno">
             <li>Ser Dueño</li>
           </Navegar>
-          <Navegar to="/Winemaker">
+          <li  onClick={toggleDropdown}> WineMaker
+              { isDropdownOpen ? (
+                  <li className="dropdown-menu active" >
+                    <div className="titulo">
+                    <Navegar to="/winemaker" >
+                          Winemaker
+                        </Navegar>
+                    </div>
+                      <ul>
+                      <li>
+                        <Navegar to="/los-vinos" className="titulo">
+                          Los Vinos
+                        </Navegar>
+                      </li>
+                      </ul>
+                  </li>
+                )
+              : null}
+              </li>
+
+         {/*  <Navegar to="/Winemaker">
             <li>WineMaker</li>
-          </Navegar>
-          <Navegar to="/los-vinos">
+          </Navegar> */}
+
+
+
+         {/*  <Navegar to="/los-vinos">
             <li>Los Vinos</li>
-          </Navegar>
+          </Navegar> */}
+
+
+
         {/*   <NavDropdown title="Winemaker" id="basic-nav-dropdown">
             <NavDropdown.Item href="/winemaker">Winemaker</NavDropdown.Item>
             <NavDropdown.Item href="/los-vinos">Los Vinos</NavDropdown.Item>
