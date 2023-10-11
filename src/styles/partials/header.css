@@ -139,6 +139,10 @@ header .menu .dropdown-menu {
     margin-top: 5px;
     border-top: 1px solid var(--colorIcons);
   }
+  header .menu ul li:hover {
+    cursor: pointer;
+  }
+  
   
   /* Estilos para los elementos del menú desplegable */
 

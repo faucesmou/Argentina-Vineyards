@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Footer from "../components/partials/Footer";
 import Galeria from "../components/Galery/Galeria";
 import Galeria2 from "../components/Galery/Galeria2";
+import Galeria3 from "../components/Galery/Galeria3";
 import Navegar from "../components/Navegar/Navegar";
 
 
@@ -121,6 +122,18 @@ function Finca() {
                                 <img src="/Images/footer/logo-blanco-fondo-negro-150x100-04.png" alt="Finca-Propia-Logo" />
                       </div>
             </section>
+
+{/* intento por achicar el slide de fotos de la Galería presenta problemas con las imágenes: superan el contenedor en responsive */}
+
+          {/*   <div className="contenedor-logoNegro"> 
+              <div className='logoNegro'>
+                <Galeria3 images={images} />
+                      <div className='imagen-logo'>
+                                <img src="/Images/footer/logo-blanco-fondo-negro-150x100-04.png" alt="Finca-Propia-Logo" />
+                      </div>
+                </div>
+            </div> */}
+            
 
             <article>
               <p className="drop-cap">

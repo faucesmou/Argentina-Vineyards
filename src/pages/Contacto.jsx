@@ -5,7 +5,7 @@ import Footer from "../components/partials/Footer";
 import axios from "axios";
 
 function Contacto() {
-    const images = [
+  const images = [
     /* "/Images/Finca/MapaArboleda.png", */
     "/Images/Finca/acceso-propietarios-fondo-01.jpg",
     /* "/Images/Finca/FincaPropiaMar20-198-scaled.jpg", */
@@ -122,9 +122,8 @@ function Contacto() {
 
         console.log("este es el dataFormulario--->", dataFormulario);
         const response = await axios.post(
-          "https://gmfp.createch.com.ar/api/submit-contactanos"
-          /* "http://localhost:443/api/submit-formulario" */,
-          dataFormulario
+          "https://gmfp.createch.com.ar/api/submit-contactanos",
+          /* "http://localhost:443/api/submit-formulario" */ dataFormulario
         );
 
         console.log(
@@ -301,8 +300,11 @@ function Contacto() {
                 Enviar
               </button>
               {formSubmitted && (
-          <span className="envioExito">Formulario enviado con éxito! A la brevedad nos comunicaremos con usted.</span>
-        )}
+                <span className="envioExito">
+                  Formulario enviado con éxito! A la brevedad nos comunicaremos
+                  con usted.
+                </span>
+              )}
             </form>
           </section>
           <section className="contenedorOficinas">
@@ -320,18 +322,20 @@ function Contacto() {
                 src="/Images/finca/MapaArboleda.png"
               ></iframe> */}
               </article>
-             
+
               <section className="comparativo">
-                <div>
-                  <img
-                    src="/Images/Finca/fondo-home-01.jpg"
-                    alt="fincaMuestra"
-                  />
-                </div>
+                <section className="logoNegro">
+                    <img
+                      src="/Images/Finca/fondo-home-01.jpg"
+                      alt="fincaMuestra"
+                    />
+                    <div className='imagen-logo'>
+                                <img src="/Images/footer/logo-blanco-fondo-negro-150x100-04.png" alt="Finca-Propia-Logo" />
+                      </div>
+                </section>
               </section>
-              
             </section>
-           {/*  <section className='logoNegro'>
+            {/*  <section className='logoNegro'>
                 <Galeria2 images={images} />
                               <div className='imagen-logo'>
                                 <img src="/Images/footer/logo-blanco-fondo-negro-150x100-04.png" alt="Finca-Propia-Logo" />

@@ -3,11 +3,14 @@
 }
 
 .Finca .content .legado {
-    padding: 0 50px;
+    width: 100%;
+    padding: 20px 20px 0;
+    margin-bottom: 0px;
+  /*   padding: 0 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 
 .Finca .content .legado .article {
@@ -55,6 +58,18 @@
     text-align: justify;
 }
 
+.content .legado .finca  {
+    align-items: center;
+}
+
+ .content .legado .finca .contenedor-logoNegro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+    width: 100%;
+} 
+
 .content .legado .finca .logoNegro {
     display: flex;
     flex-direction: column;
@@ -68,10 +83,13 @@
 
 .Finca .content .video-completo {
     width: 100%;
+    height: 50%;
+    
 }
 
 .Finca .content .video-completo video {
     width: 100%;
+    height: 50%;
 }
 
 .Finca .content .conocer-mas {
@@ -115,7 +133,7 @@
 }
 
 .Finca .content .conocer-mas .botones .black {
-    display: block;
+    /* display: block; */
     float: left;
     position: relative;
     z-index: 2;
@@ -304,6 +322,13 @@
         line-height: 120%;
     }
 
+    /* .content .legado .finca .contenedor-logoNegro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       justify-content: center;
+        width: 100%;
+    }  */
     .content .legado .finca .logoNegro {
         display: flex;
         flex-direction: column;
