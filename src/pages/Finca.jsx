@@ -5,6 +5,8 @@ import Galeria2 from "../components/Galery/Galeria2";
 import Galeria3 from "../components/Galery/Galeria3";
 import Navegar from "../components/Navegar/Navegar";
 
+import Slider from '../components/Slider/Slider';
+
 
 function Finca() {
   const images = [
@@ -117,6 +119,7 @@ function Finca() {
               {/*   <Galeria images={images} /> */}
 
               <section className='logoNegro'>
+                
                 <Galeria2 images={images} />
                       <div className='imagen-logo'>
                                 <img src="/Images/footer/logo-blanco-fondo-negro-150x100-04.png" alt="Finca-Propia-Logo" />

@@ -14,6 +14,8 @@
 
 /* contacto */
 @import url('./Contacto/contacto.css');
+/* contacto */
+@import url('./ContactoInicial/contactoInicial.css');
 
 /* finca */
 @import url('./Finca/finca.css');
@@ -21,3 +23,6 @@
 
 /* vinos */
 @import url('./LosVinos/vinos.css');
+
+/* legales */
+@import url('./Legales/legales.css');

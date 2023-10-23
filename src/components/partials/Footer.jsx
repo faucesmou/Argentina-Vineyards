@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import Navegar from "../Navegar/Navegar";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
+   
   return (
     <footer>
         <section className='logo contenedor'>
@@ -30,7 +33,7 @@ function Footer() {
                     <p>TERARE PARAGUAY</p>
                     <p>Asunción: WTC torre 2 piso 10</p>
                     <p>Ciudad del Este: Avenida 11 de Setiembre 512, piso 1 casi Carlos A. López</p>
-                    <a href="tel:595992925106">Tel.: +595 992 925 106</a>
+                    <a href="tel:595992925106">Tel: +595 992 925 106</a>
                     <a href="mailto:atencion.paraguay@fincapropia.com">atencion.paraguay@fincapropia.com</a>
                 </li>
             </ul>
@@ -40,6 +43,7 @@ function Footer() {
                 <li h5>
                     <h5>Finca Propia Brasil</h5>
                     <a href="tel:(011) 93022-7013">Tel: (011) 93022-7013</a>
+                    {/* <a href="tel:(011) 93022-7013">Tel: +55 11 2338-5510</a> */}
                     <p>Endereço</p>
                     <p>Av. Miruna 1569 - São Paulo - Brasil</p>
                     <p>Cep 04084-006</p>
@@ -57,7 +61,9 @@ function Footer() {
                 <p>© 2020 Finca Propia. All Rights Reserved.</p>
             </article>
             <article>
-                <p>Legales</p>
+            <NavLink to="/legales" >
+                <li>Legales</li>
+              </NavLink>
             </article>
         </section>
     </footer>

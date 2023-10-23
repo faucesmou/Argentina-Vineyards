@@ -1,0 +1,119 @@
+/* 20.10.23 nueva página de ContactoInicial es la vista previa al formulario*/
+
+
+.content .conocer-mas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   /*  margin-top: 0px; */
+    
+  }
+  .button-container-contactoInicial{
+    font-family: "Montserrat", Sans-serif;
+    fill: #fff;
+    color: #fff;
+    font-size: 18px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .elementor-button-text{
+    font-family: "Montserrat",Sans-serif;
+    fill: #fff;
+    color: #fff;
+    background-color: #b89351;
+    font-size: normal;
+    font-size: 18px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+  .textoContactoInicial{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .logoContactoInicial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px; /* Ancho deseado */
+    height: 100px;
+  }
+  
+  .iframe-container{
+    width: 500px; /* Ancho deseado */
+    height: 500px; /* Altura deseada */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  iframe {
+    
+    border: 0;
+  }
+
+  /* Estilos para pantallas pequeñas (máximo 535px de ancho) */
+
+@media (max-width: 535px) {
+    .content .conocer-mas {
+      align-items: center; /* Centra los elementos */
+      text-align: center; /* Alinea el texto al centro */
+    }
+  
+    .button-container-contactoInicial, .elementor-button-text {
+      font-size: 16px; /* Reduzca el tamaño de fuente */
+      padding: 15px 30px; /* Reduzca el relleno del botón */
+      margin: 15px 0; /* Ajusta los márgenes */
+    }
+  
+    .textoContactoInicial {
+      margin: 15px 0; /* Ajusta los márgenes */
+      font-size: 18px; /* Reduzca el tamaño de fuente */
+    }
+  
+    .logoContactoInicial {
+      width: 80px; /* Reduzca el tamaño del logo */
+      height: 80px; /* Reduzca el tamaño del logo */
+    }
+  
+    .iframe-container {
+      width: 100%; /* Ocupa todo el ancho disponible */
+      max-width: 300px; /* Establece un ancho máximo */
+      height: 300px; /* Establece una altura fija */
+      justify-content: center;
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas (máximo 400px de ancho) */
+@media (max-width: 400px) {
+  .content .conocer-mas {
+    align-items: center; /* Centra los elementos */
+    text-align: center; /* Alinea el texto al centro */
+  }
+
+  .button-container-contactoInicial, .elementor-button-text {
+    font-size: 14px; /* Reduzca el tamaño de fuente */
+    padding: 12px 24px; /* Reduzca el relleno del botón */
+    margin: 10px 0; /* Ajusta los márgenes */
+  }
+
+  .textoContactoInicial {
+    margin: 10px 0; /* Ajusta los márgenes */
+    font-size: 16px; /* Reduzca el tamaño de fuente */
+  }
+
+  .logoContactoInicial {
+    width: 60px; /* Reduzca el tamaño del logo */
+    height: 60px; /* Reduzca el tamaño del logo */
+  }
+
+  .iframe-container {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 250px; /* Establece un ancho máximo */
+    height: 250px; /* Establece una altura fija */
+    justify-content: center;
+  }
+}

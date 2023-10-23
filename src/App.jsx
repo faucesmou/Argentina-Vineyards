@@ -9,6 +9,9 @@ import Dueño from './pages/Dueño';
 import Winemaker from './pages/Winemaker';
 import Finca from "./pages/Finca";
 import Contacto from "./pages/Contacto";
+import ContactoInicial from "./pages/ContactoInicial";
+import Legales from "./pages/Legales";
+
 import LosVinos from "./pages/LosVinos";
 import { useState } from "react";
 function App() {
@@ -28,7 +31,9 @@ function App() {
                     <Route path="/winemaker" element={<Winemaker setIsMenuOpen={setIsMenuOpen}  />} />;
                     <Route path="/finca" element={<Finca setIsMenuOpen={setIsMenuOpen}  />} />;
                     <Route path="/contacto" element={<Contacto setIsMenuOpen={setIsMenuOpen} />} />;
+                    <Route path="/ContactoInicial" element={<ContactoInicial setIsMenuOpen={setIsMenuOpen} />} />;
                     <Route path="/los-vinos" element={<LosVinos setIsMenuOpen={setIsMenuOpen} />} />;
+                    <Route path="/legales" element={<Legales />} />;
                 </Routes>
             </div>
         </BrowserRouter>

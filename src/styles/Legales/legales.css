@@ -1,0 +1,138 @@
+
+.Winemaker .legales .vines, .Winemaker .datos .contenedor-legales-texto-imagen{
+    padding: 20px 50px;
+    display: flex;
+    flex-wrap: nowrap; /* Permite que los elementos se envuelvan cuando no quepan en una fila */
+  justify-content: space-between; /* Distribuye los elementos de manera uniforme */ 
+  align-items: flex-start;
+
+}
+
+.Winemaker .datos .legales-textos {
+    width: 90%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 600px;
+}
+.Winemaker .datos .legales-imagenes{
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Ajusta el estilo de la imagen dentro del contenedor */
+.Winemaker .datos .legales-imagenes img {
+    max-width: 100%; 
+    height: auto; /* Mantener la proporción de aspecto de la imagen */
+  }
+/* Añade un margen entre el texto y la imagen */
+.Winemaker .datos .legales-textos,
+.Winemaker .datos .legales-imagenes {
+  margin-right: 20px; /* Ajusta el margen derecho para separar el texto de la imagen */
+}
+
+.Winemaker .datos article .textoLegales{
+    font-family: 'Montserrat', sans-serif;
+    color: #626262;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+/* ---------------------------------------------------- */
+
+/* Se replican estilos para contenedor e items del contenedor grid "reverse" que se implementa para intercalar texto foto texto en pantallas pequeñas */
+
+
+
+.Winemaker .datos article p.drop-cap{
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 1px;/* Espaciado de línea */
+    margin-bottom: 20px; /* Espacio entre párrafos */
+    /* Estilos de la letra inicial */
+    overflow: hidden;
+    text-align: justify;
+}
+.Winemaker .datos article p span.letraGrande{
+    float: left;
+    font-size: 72px; /* Tamaño de fuente de la letra inicial */
+    margin-right: 8px; /* Espacio entre la letra inicial y el texto */
+    line-height: 1; 
+}
+
+
+.Winemaker h2.foot{
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+    color:black;
+}
+.Winemaker button{
+    padding: 18px 33px;
+    width: 100%;
+    text-align: center;
+    background-color: #b89351;
+    color: #ffffff;
+    border: none;
+    font-size: 120%;
+    line-height: 120%;
+}
+
+.bottomPage {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+}
+
+/* Estilos para pantallas menores de 767px */
+/* Estilos para pantallas más pequeñas (máximo 535px de ancho) */
+@media (max-width: 535px) {
+    .Winemaker .legales .vines,
+    .Winemaker .datos .contenedor-legales-texto-imagen {
+      padding: 20px 20px; /* Reduzca el relleno horizontal */
+      flex-direction: column; /* Cambia la dirección a columna */
+      align-items: center; /* Centra los elementos en la vista */
+    }
+  
+    .Winemaker .datos .legales-textos,
+    .Winemaker .datos .legales-imagenes {
+      width: 100%; /* Ocupa todo el ancho disponible */
+      padding: 0; /* Elimina el relleno horizontal */
+      margin: 0; /* Elimina los márgenes */
+      max-height: none;
+    }
+  
+    .Winemaker .datos .legales-imagenes img {
+      max-width: 100%; /* Hacer que la imagen ocupe todo el ancho disponible */
+      height: auto; /* Mantener la proporción de aspecto de la imagen */
+    }
+  
+    .Winemaker .datos article .textoLegales {
+      font-size: 12px; /* Reduzca el tamaño de fuente */
+      line-height: 16px; /* Ajusta la altura de línea */
+      margin: 5px 0; /* Reduzca el espacio entre párrafos */  
+
+    }
+  
+  }
+  
+
+
+
+
+
+
+
+

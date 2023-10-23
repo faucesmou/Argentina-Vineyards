@@ -106,7 +106,7 @@ function LargeScreenHeader() {
           <Navegar to="/finca">
             <li>La Finca</li>
           </Navegar>
-          <Navegar to="/contacto">
+          <Navegar to="/ContactoInicial">
             <li>Contacto</li>
           </Navegar>
         </ul>

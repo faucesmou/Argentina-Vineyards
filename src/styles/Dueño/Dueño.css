@@ -26,6 +26,7 @@
     margin-bottom: 20px;  
     overflow: hidden;
     text-align: justify;
+    font-family: 'Montserrat', sans-serif;
 }
 .Dueño .sueño p span.letraGrande{
     float: left;
@@ -40,6 +41,8 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0px;
+    
+    
 }
 .Dueño .logoNegro{
     display: flex;
@@ -90,6 +93,7 @@
 .Dueño .vides .produccion p{
     color: #626262;
     letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
 }
 .Dueño .vides .produccion p span{
     font-weight: 700;

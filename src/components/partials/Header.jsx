@@ -101,7 +101,7 @@ function Header({ isMenuOpen, setIsMenuOpen }) {
               <NavLink to="/finca" onClick={closeMenu}>
                 <li>La Finca</li>
               </NavLink>
-              <NavLink to="/contacto" onClick={closeMenu}>
+              <NavLink to="/ContactoInicial" onClick={closeMenu}>
                 <li>Contacto</li>
               </NavLink>
             </ul>
