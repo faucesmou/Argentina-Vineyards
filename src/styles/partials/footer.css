@@ -57,6 +57,8 @@ footer .legales{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 30px;
+    
 }
 footer .legales article.derechos{
     color: #4d4d4d;
@@ -130,6 +132,7 @@ footer .legales article.derechos{
       padding-top: 10px; /* Reduce el espacio encima de la sección de legales */
       flex-direction: column; /* Apile los elementos de legales verticalmente */
       align-items: center; /* Centra los elementos de legales */
+      margin-bottom: 40px;
     }
   }
   
