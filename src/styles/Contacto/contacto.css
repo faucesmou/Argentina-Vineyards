@@ -20,57 +20,6 @@ h2 {
     color: black;
     font-family: var(--fuente-regular);
 }
-/* Estilos para tamaños pequeños::: */
-@media (min-width: 768px) {
-    .Finca .content .legado{
-        max-width: 1440px;
-        padding: 0 100px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .Finca .content .legado article{
-        width: 40%;
-    }
-    .Finca .content .legado {
-        font-size: 36px;
-        line-height: 43px;
-        letter-spacing: 1px;
-        font-weight: 300;
-        font-family: "Playfair Display",Arial,Tahoma,sans-serif;
-        margin-bottom: 15px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid #cdcecf;
-    }
-    
-}
-
-/* todavía no estan resueltos los tamaños pequeños!---------> terminar */
-@media (max-width: 535px) {
-
-  .Contacto .content {
-    max-width: 7220px;
-    padding: 0 50px;
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-between; */
-}
-.Contacto .content section{
-    width: 20%;
-}
-.Finca .content .legado {
-    font-size: 36px;
-    line-height: 43px;
-    letter-spacing: 1px;
-    font-weight: 300;
-    font-family: "Playfair Display",Arial,Tahoma,sans-serif;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #cdcecf;
-}
-
-}
-
 
 /* 28/09/2023 */
 
@@ -90,7 +39,7 @@ h2 {
   .select-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px; /* Espacio entre los campos */
+    margin-bottom: 10px; 
   }
   
   .inputContainer {
@@ -153,7 +102,6 @@ h2 {
 h5{
     font-family: "Playfair Display",Arial,Tahoma,sans-serif;
     width: auto;
-   /*  width: 100%; */
     font-size: 20px;
     padding: 10px;
     text-align: center;
@@ -170,9 +118,7 @@ h5{
   
 }
 
-.content  .contenedorOficinas .conocer-mas h5 {
-/*   margin-top: -20px; */
-}
+
 
 .content  .contenedorOficinas .conocer-mas article {
   display: flex;
@@ -204,3 +150,74 @@ h5{
   height: 30px;
 }
 
+/* todavía no estan resueltos los tamaños pequeños!---------> terminar */
+/* Estilos para pantallas pequeñas (máximo 420px de ancho) */
+@media (max-width: 420px) {
+  h2 {
+    font-size: 36px; /* Reduzca el tamaño de fuente del encabezado */
+  }
+
+  .formContainer {
+    text-align: left; /* Alinea el contenido del formulario a la izquierda */
+  }
+
+  .select-container, .inputContainer {
+    margin-bottom: 10px; /* Aumenta el espacio entre controles */
+  }
+
+  input, select, button {
+    padding: 8px; /* Reduzca el relleno de los controles */
+    margin-bottom: 8px; /* Reduzca el espacio entre controles */
+  }
+
+  input, select {
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+
+  .botones {
+    flex-direction: column; /* Apila los botones uno encima del otro */
+  }
+
+  button {
+    margin: 5px 0; /* Aumenta el espacio entre botones */
+  }
+
+  .contenedorOficinas {
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 0 10px; /* Reduzca el espacio alrededor del contenido */
+  }
+
+  h5 {
+    font-size: 18px; /* Reduzca el tamaño de fuente del subtítulo */
+  }
+  
+  .content .contenedorOficinas .conocer-mas .comparativo .logoNegro .imagen-logo img {
+    height: 20px; /* Reduzca el tamaño de la imagen del logo */
+  }
+}
+
+
+/* Estilos para tamaños pequeños::: */
+@media (min-width: 768px) {
+ /*  .Finca .content .legado{
+      max-width: 1440px;
+      padding: 0 100px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  .Finca .content .legado article{
+      width: 40%;
+  }
+  .Finca .content .legado {
+      font-size: 36px;
+      line-height: 43px;
+      letter-spacing: 1px;
+      font-weight: 300;
+      font-family: "Playfair Display",Arial,Tahoma,sans-serif;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #cdcecf;
+  } */
+  
+}

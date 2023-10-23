@@ -57,63 +57,41 @@
 
   /* Estilos para pantallas pequeñas (máximo 535px de ancho) */
 
-@media (max-width: 535px) {
-    .content .conocer-mas {
-      align-items: center; /* Centra los elementos */
-      text-align: center; /* Alinea el texto al centro */
-    }
-  
-    .button-container-contactoInicial, .elementor-button-text {
-      font-size: 16px; /* Reduzca el tamaño de fuente */
-      padding: 15px 30px; /* Reduzca el relleno del botón */
-      margin: 15px 0; /* Ajusta los márgenes */
-    }
-  
-    .textoContactoInicial {
-      margin: 15px 0; /* Ajusta los márgenes */
-      font-size: 18px; /* Reduzca el tamaño de fuente */
-    }
-  
-    .logoContactoInicial {
-      width: 80px; /* Reduzca el tamaño del logo */
-      height: 80px; /* Reduzca el tamaño del logo */
-    }
-  
-    .iframe-container {
-      width: 100%; /* Ocupa todo el ancho disponible */
-      max-width: 300px; /* Establece un ancho máximo */
-      height: 300px; /* Establece una altura fija */
-      justify-content: center;
-    }
-  }
-  
-  /* Estilos para pantallas pequeñas (máximo 400px de ancho) */
-@media (max-width: 400px) {
+/* Estilos para pantallas pequeñas (máximo 420px de ancho) */
+@media (max-width: 420px) {
   .content .conocer-mas {
     align-items: center; /* Centra los elementos */
-    text-align: center; /* Alinea el texto al centro */
   }
 
   .button-container-contactoInicial, .elementor-button-text {
-    font-size: 14px; /* Reduzca el tamaño de fuente */
-    padding: 12px 24px; /* Reduzca el relleno del botón */
-    margin: 10px 0; /* Ajusta los márgenes */
+    font-size: 16px; /* Reduzca el tamaño de fuente de los botones */
+    padding: 12px 24px; /* Reduzca el relleno de los botones */
+    margin: 10px 0; /* Aumenta el espacio entre botones */
   }
 
   .textoContactoInicial {
-    margin: 10px 0; /* Ajusta los márgenes */
-    font-size: 16px; /* Reduzca el tamaño de fuente */
+    margin: 10px 0; /* Aumenta el espacio alrededor del texto */
+    font-size: 18px; /* Reduzca el tamaño de fuente del texto */
   }
 
   .logoContactoInicial {
-    width: 60px; /* Reduzca el tamaño del logo */
-    height: 60px; /* Reduzca el tamaño del logo */
+    width: 80px; /* Reduzca el tamaño del logo */
+    height: 80px; /* Reduzca el tamaño del logo */
   }
 
   .iframe-container {
     width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 250px; /* Establece un ancho máximo */
-    height: 250px; /* Establece una altura fija */
+    max-width: 300px; /* Establece un ancho máximo */
+    height: 300px; /* Establece una altura fija */
     justify-content: center;
   }
+
+  iframe {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 300px; /* Establece un ancho máximo para el iframe */
+  }
 }
+
+  
+  /* Estilos para pantallas pequeñas (máximo 400px de ancho) */
+
