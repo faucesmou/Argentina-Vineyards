@@ -88,3 +88,48 @@ footer .legales article.derechos{
         text-overflow: ellipsis; */
     }
 }
+
+/* Estilos para pantallas pequeñas (máximo 420px de ancho) */
+@media (max-width: 420px) {
+    footer {
+      padding: 10px; /* Reduce el relleno del footer */
+    }
+  
+    footer .contenedor {
+      width: 100%; /* Ocupa todo el ancho disponible */
+      padding: 10px; /* Reduc el relleno del contenedor */
+      flex-direction: column;
+      align-items: center; /* Centra los elementos verticalmente */
+    }
+  
+    footer .logo img {
+      width: 120px; /* Reduce el tamaño del logo */
+      margin: 10px 0;
+    }
+  
+    footer .contenedor ul {
+      width: 100%; /* Ocupa todo el ancho disponible */
+      margin-top: 10px;
+    }
+  
+    footer .contenedor ul li {
+      margin-top: 5px; /* Reduce el espacio entre elementos de la lista */
+    }
+  
+    footer h5 {
+      font-size: 14px; /* Reduce el tamaño de fuente de los subtítulos */
+      margin-bottom: 5px; /* Reduce el espacio debajo de los subtítulos */
+    }
+  
+    footer .brasil img {
+      width: 70%; /* Reduce el tamaño de la imagen de Brasil */
+      margin-top: 10px;
+    }
+  
+    footer .legales {
+      padding-top: 10px; /* Reduce el espacio encima de la sección de legales */
+      flex-direction: column; /* Apile los elementos de legales verticalmente */
+      align-items: center; /* Centra los elementos de legales */
+    }
+  }
+  
