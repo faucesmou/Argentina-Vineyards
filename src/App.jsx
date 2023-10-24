@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import './styles/styles.css'
 import './styles/estilos.css'
 
@@ -14,7 +15,12 @@ import Legales from "./pages/Legales";
 
 import LosVinos from "./pages/LosVinos";
 import { useState } from "react";
+
+import ReactGA from 'react-ga'; // Importa ReactGA
+
+
 function App() {
+
 
     const isAnchoMayorA769 = window.matchMedia("(min-width: 769px)").matches;
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,7 +32,9 @@ function App() {
                 {isAnchoMayorA769 ? <LargeScreenHeader /> : <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />}
                 
                 <Routes>
-                    <Route path="/" element={<Home setIsMenuOpen={setIsMenuOpen} />} />;
+                    <Route path="/" element={<Home setIsMenuOpen={setIsMenuOpen} />}  onChange={() => {
+      ReactGA.pageview(window.location.pathname + window.location.search);
+    }} />;
                     <Route path="/ser-dueno" element={<Dueño setIsMenuOpen={setIsMenuOpen} />} />;
                     <Route path="/winemaker" element={<Winemaker setIsMenuOpen={setIsMenuOpen}  />} />;
                     <Route path="/finca" element={<Finca setIsMenuOpen={setIsMenuOpen}  />} />;
