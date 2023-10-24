@@ -1,7 +1,7 @@
 // GoogleAnalytics.js
 import ReactGA from 'react-ga';
 
-const TRACKING_ID = 'G-ZKDNXHSL4Z'; // Reemplaza con tu propio ID
+const TRACKING_ID = 'G-FTCZXXCP96'; // Reemplaza con tu propio ID
 
 ReactGA.initialize(TRACKING_ID);
 ReactGA.pageview(window.location.pathname);
